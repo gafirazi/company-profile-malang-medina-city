@@ -22,12 +22,20 @@
               kuat dengan durabilitas tinggi.
             </p>
             <div class="mt-4">
-              <button type="button" class="w-full rounded-full bg-[#FCD34D] px-4 py-2 text-sm font-semibold text-[#0B1511]">
+              <NuxtLink :to="`/artikel/${i-1}`" class="block w-full rounded-full bg-[#FCD34D] px-4 py-2 text-center text-sm font-semibold text-[#0B1511]">
                 READ MORE
-              </button>
+              </NuxtLink>
             </div>
           </div>
         </article>
+      </div>
+      <div class="mt-8 flex justify-center">
+        <NuxtLink
+          to="/list-artikel"
+          class="rounded-full bg-[#FCD34D] px-4 py-2 text-sm font-semibold text-[#0B1511] inline-block"
+        >
+          Lihat Semua Artikel
+        </NuxtLink>
       </div>
     </div>
   </section>
