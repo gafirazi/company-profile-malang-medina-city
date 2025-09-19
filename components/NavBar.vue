@@ -6,9 +6,9 @@
         <img :src="logo" alt="Medina" class="h-8 w-auto" style="filter: brightness(0) invert(1);" />
       </a>
       <ul class="hidden items-center gap-8 font-sans text-sm md:flex">
-        <li><a href="#lokasi" class="hover:underline">lokasi</a></li>
-        <li><a href="#keunggulan" class="hover:underline">keunggulan kami</a></li>
-        <li><a href="#produk" class="hover:underline">produk kami</a></li>
+        <li><a href="#lokasi" class="hover:underline">Lokasi</a></li>
+        <li><a href="#keunggulan" class="hover:underline">Keunggulan Kami</a></li>
+        <li><a href="#produk" class="hover:underline">Produk Kami</a></li>
       </ul>
       <button type="button" class="md:hidden" @click="open = !open" aria-label="Toggle menu">
         <Icon :name="open ? 'mdi:close' : 'mdi:menu'" size="26" />

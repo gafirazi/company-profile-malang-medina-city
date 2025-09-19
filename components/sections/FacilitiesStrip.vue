@@ -18,7 +18,7 @@
       </div>
 
       <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
-        <div v-for="(src, i) in gallery" :key="i" class="w-full max-w-xs sm:max-w-sm md:max-w-md">
+        <div v-for="(src, i) in gallery" :key="i" class="w-full flex-1">
           <div class="aspect-[16/9] overflow-hidden rounded-sm ring-1 ring-white/10">
             <img :src="src" :alt="`fasilitas-${i + 1}`" class="h-full w-full object-cover" />
           </div>

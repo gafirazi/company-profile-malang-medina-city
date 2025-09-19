@@ -6,7 +6,7 @@
 
       <div class="mt-6 grid grid-cols-1 gap-0 md:grid-cols-2">
         <!-- Image/slider area -->
-        <div class="relative w-full overflow-hidden" :style="panelStyle">
+        <div class="relative w-full overflow-hidden" :style="imagePanelStyle">
           <div
             class="h-full w-full"
             @touchstart="onTouchStart"
@@ -24,7 +24,7 @@
         </div>
 
         <!-- Text panel -->
-        <div ref="textPanelRef" class="bg-brand-green relative px-6 py-6 md:px-8 md:py-8" :style="panelStyle">
+        <div ref="textPanelRef" class="bg-brand-green relative px-6 py-6 md:px-8 md:py-8" :style="textPanelStyle">
           <div class="font-sans text-brand-cream/80">
             <span class="font-serif text-5xl font-semibold text-brand-cream">0{{ current + 1 }}</span>
             <span class="mx-2 text-xl">/</span>
@@ -139,10 +139,6 @@ const isMd = ref(false)
 function recalc() {
   if (typeof window === 'undefined') return
   isMd.value = window.matchMedia('(min-width: 768px)').matches
-  if (!isMd.value) {
-    textPanelHeight.value = 0
-    return
-  }
   nextTick(() => {
     const measure = measureRef.value
     const panel = textPanelRef.value
@@ -165,8 +161,17 @@ onBeforeUnmount(() => {
   if (typeof window !== 'undefined') window.removeEventListener('resize', recalc)
 })
 
-const panelStyle = computed(() => {
-  return isMd.value && textPanelHeight.value
+const imagePanelStyle = computed(() => {
+  if (isMd.value) {
+    return textPanelHeight.value
+      ? { height: textPanelHeight.value + 'px' }
+      : {}
+  }
+  return { height: '200px' }
+})
+
+const textPanelStyle = computed(() => {
+  return textPanelHeight.value
     ? { height: textPanelHeight.value + 'px' }
     : {}
 })

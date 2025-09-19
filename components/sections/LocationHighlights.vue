@@ -11,16 +11,15 @@
             <span class="block h-12 w-px bg-brand-cream/80" />
             <div>
               <div class="flex items-start gap-3">
-                <span class="font-serif text-2xl md:text-6xl font-semibold leading-[0] text-brand-cream">{{ item.num }}</span>
-                <span class="font-sans text-1xl md:text-3xl font-semibold leading-none lowercase text-brand-cream">menit</span>
+                <span class="text-valuess font-serif text-2xl md:text-6xl font-semibold leading-[0] text-brand-cream">{{ item.num }}</span>
+                <span class="text-labelss font-sans text-1xl md:text-3xl font-semibold leading-none lowercase text-brand-cream">menit</span>
               </div>
               <div class="mt-2 text-base text-brand-cream/80">{{ item.caption }}</div>
             </div>
           </div>
         </div>
 
-        <div class="mt-10">
-          <div class="h-12"></div>
+        <div class="maps-container">
           <div class="w-full overflow-hidden rounded-sm ring-1 ring-white/10">
             <iframe
               width="100%"
@@ -74,3 +73,15 @@ const leftMetrics = [
 const gmapsSrc = 'https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Malang%20Medina%20CIty+(Malang%20Medina%20City)&t=&z=14&ie=UTF8&iwloc=B&output=embed'
 import bigMap from '@/assets/img/location-highlights.png'
 </script>
+
+<style scoped>
+.text-valuess {
+  line-height: 0.3;
+}
+.text-labelss {
+  line-height: inherit;
+}
+.maps-container {
+  margin-top: 3.9rem;
+}
+</style>
