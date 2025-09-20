@@ -14,9 +14,9 @@
           >
             <transition name="fade" mode="out-in">
               <img
-                :key="slides[current].image"
-                :src="slides[current].image"
-                :alt="slides[current].title"
+                :key="currentSlide.image"
+                :src="currentSlide.image"
+                :alt="currentSlide.title"
                 class="h-full w-full object-cover"
               />
             </transition>
@@ -28,11 +28,11 @@
           <div class="font-sans text-brand-cream/80">
             <span class="font-serif text-5xl font-semibold text-brand-cream">0{{ current + 1 }}</span>
             <span class="mx-2 text-xl">/</span>
-            <span class="text-xl">0{{ slides.length }}</span>
+            <span class="text-xl">0{{ safeSlides.length }}</span>
           </div>
-          <h4 class="mt-2 font-sans text-3xl font-extrabold text-white">{{ slides[current].title }}</h4>
-          <div class="mt-4 space-y-3 font-sans text-[15px] leading-7 text-white/85">
-            <p v-for="(p, idx) in slides[current].paragraphs" :key="idx">{{ p }}</p>
+          <h4 class="mt-2 font-sans text-3xl font-extrabold text-white">{{ currentSlide.title }}</h4>
+          <div class="mt-4 font-sans text-[15px] leading-7 text-white/85 whitespace-pre-line">
+            <p>{{ currentSlide.paragraph }}</p>
           </div>
           <div class="absolute bottom-4 right-4 flex items-center gap-3">
             <button
@@ -57,15 +57,15 @@
 
       <!-- Hidden measurement container -->
       <div ref="measureRef" class="fixed -left-[9999px] top-0 invisible">
-        <div v-for="s in slides" :key="s.title" class="px-6 py-6 md:px-8 md:py-8">
+        <div v-for="s in safeSlides" :key="s.title" class="px-6 py-6 md:px-8 md:py-8">
           <div class="font-sans text-brand-cream/80">
             <span class="font-serif text-5xl font-semibold text-brand-cream">00</span>
             <span class="mx-2 text-xl">/</span>
             <span class="text-xl">00</span>
           </div>
           <h4 class="mt-2 font-sans text-3xl font-extrabold text-white">{{ s.title }}</h4>
-          <div class="mt-4 space-y-3 font-sans text-[15px] leading-7 text-white/85">
-            <p v-for="(p, idx) in s.paragraphs" :key="idx">{{ p }}</p>
+          <div class="mt-4 font-sans text-[15px] leading-7 text-white/85 whitespace-pre-line">
+            <p>{{ s.paragraph }}</p>
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@ import s4 from '@/assets/img/facilities-strip-img-1.png'
 
 const slideImages = [s1, s2, s3, s4]
 
-const slides = [
+const defaultSlides = [
   {
     image: slideImages[0],
     title: 'Lokasi Strategis',
@@ -115,15 +115,49 @@ const slides = [
 ]
 
 import { ref, onMounted, onBeforeUnmount, nextTick, computed } from 'vue'
+type GallerySlideInput = { id?: string; image?: string | null; title?: string; paragraph?: string }
+type GallerySlide = { id?: string; image: string; title: string; paragraph: string }
+const { data } = await useAsyncData<GallerySlideInput[]>('gallery-showcase', () => $fetch<GallerySlideInput[]>('/api/gallery-showcase'))
+const slidesInput = computed<GallerySlideInput[]>(() => (Array.isArray(data.value) ? data.value : []))
+const fallbackImage: string = (slideImages[0] as string) || ''
+const normalizedSlides = computed<GallerySlide[]>(() =>
+  slidesInput.value.map((s) => ({
+    id: s.id,
+    image: s.image ?? fallbackImage,
+    title: s.title ?? '',
+    paragraph: typeof s.paragraph === 'string' ? s.paragraph : ''
+  }))
+)
+const safeSlides = computed<GallerySlide[]>(() => (
+  normalizedSlides.value.length
+    ? normalizedSlides.value
+    : (defaultSlides.map((d) => ({ image: d.image, title: d.title, paragraph: d.paragraphs.join('\n\n') })) as GallerySlide[])
+))
 const current = ref(0)
-const next = () => { current.value = (current.value + 1) % slides.length }
-const prev = () => { current.value = (current.value - 1 + slides.length) % slides.length }
+const next = () => { current.value = (current.value + 1) % safeSlides.value.length }
+const prev = () => { current.value = (current.value - 1 + safeSlides.value.length) % safeSlides.value.length }
+
+const currentSlide = computed<GallerySlide>(() => {
+  const list = safeSlides.value
+  if (!list.length) {
+    return { image: fallbackImage, title: '', paragraph: '' }
+  }
+  const index = current.value % list.length
+  const s = list[index] as GallerySlide
+  return s
+})
 
 let touchX: number | null = null
-const onTouchStart = (e: TouchEvent) => { touchX = e.changedTouches[0].clientX }
+const onTouchStart = (e: TouchEvent) => {
+  const first = e.changedTouches?.[0]
+  if (!first) return
+  touchX = first.clientX
+}
 const onTouchEnd = (e: TouchEvent) => {
   if (touchX === null) return
-  const dx = e.changedTouches[0].clientX - touchX
+  const first = e.changedTouches?.[0]
+  if (!first) return
+  const dx = first.clientX - touchX
   if (Math.abs(dx) > 30) {
     if (dx < 0) next()
     else prev()
@@ -145,7 +179,7 @@ function recalc() {
     if (!measure || !panel) return
     measure.style.width = panel.offsetWidth + 'px'
     let max = 0
-    Array.from(measure.children).forEach((child) => {
+    Array.from(measure.children || []).forEach((child) => {
       const el = child as HTMLElement
       max = Math.max(max, el.scrollHeight)
     })

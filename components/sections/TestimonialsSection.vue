@@ -9,9 +9,9 @@
           <transition name="fade" mode="out-in">
             <div :key="current" class="px-4 py-4">
               <p class="font-sans text-lg leading-8 text-brand-cream">
-                “{{ slides[current].quote }}”
+                “{{ currentSlide.quote }}”
               </p>
-              <p class="mt-6 font-sans text-base font-semibold text-brand-cream/90">{{ slides[current].author }}</p>
+              <p class="mt-6 font-sans text-base font-semibold text-brand-cream/90">{{ currentSlide.author }}</p>
             </div>
           </transition>
 
@@ -36,7 +36,7 @@
 
         <div class="mt-6 flex justify-center gap-2">
           <button
-            v-for="(s, i) in slides"
+            v-for="(s, i) in safeSlides"
             :key="i"
             class="h-2 w-2 rounded-full"
             :class="i === current ? 'bg-brand-cream' : 'bg-white/30'"
@@ -50,9 +50,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
 
-const slides = [
+type Slide = { id?: string; quote: string; author: string }
+
+const defaultSlides: Slide[] = [
   {
     quote:
       'Saya puas dengan kualitas bangunan yang diserah terimakan, proses pembayaran mudah dan sesuai dengan syariat Islam, jadinya tidak perlu khawatir lagi',
@@ -70,11 +72,21 @@ const slides = [
   }
 ]
 
+const { data } = await useAsyncData<Slide[]>('testimonials', () => $fetch<Slide[]>('/api/testimonials'))
+const slides = computed<Slide[]>(() => (Array.isArray(data.value) ? data.value : []))
+const safeSlides = computed<Slide[]>(() => (slides.value.length ? slides.value : defaultSlides))
+
 const current = ref(0)
 let timer: ReturnType<typeof setInterval> | null = null
-const next = () => (current.value = (current.value + 1) % slides.length)
-const prev = () => (current.value = (current.value - 1 + slides.length) % slides.length)
+const next = () => (current.value = (current.value + 1) % safeSlides.value.length)
+const prev = () => (current.value = (current.value - 1 + safeSlides.value.length) % safeSlides.value.length)
 const go = (i: number) => (current.value = i)
+const currentSlide = computed<Slide>(() => {
+  const list = safeSlides.value
+  if (!list.length) return { quote: '', author: '' }
+  const index = current.value % list.length
+  return (list[index] as Slide) || { quote: '', author: '' }
+})
 
 onMounted(() => {
   timer = setInterval(next, 4000)

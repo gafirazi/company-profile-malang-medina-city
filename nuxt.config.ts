@@ -20,5 +20,14 @@ export default defineNuxtConfig({
       Inter: [400, 500, 600]
     },
     display: 'swap'
+  },
+  runtimeConfig: {
+    contentful: {
+      spaceId: process.env.CONTENTFUL_SPACE_ID,
+      environment: process.env.CONTENTFUL_ENVIRONMENT || 'master',
+      cdaToken: process.env.CONTENTFUL_CDA_TOKEN,
+      previewToken: process.env.CONTENTFUL_PREVIEW_TOKEN
+    },
+    public: {}
   }
 })

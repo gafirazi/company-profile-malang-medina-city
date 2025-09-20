@@ -41,19 +41,14 @@
         </div>
         <h4 class="mt-8 font-sans text-2xl font-extrabold text-white">
           <span class="font-extrabold">Rencana KEK Singhasari</span>
-          <span class="font-normal"> bersebelahan dengan area Malang</span>
+          <span class="font-normal"> bersebelahan dengan area Malang Medina City</span>
         </h4>
         <div class="mt-4 space-y-4 font-sans text-[15px] leading-7 text-white/85">
           <p>
-            Medina City, dimana di area ini rencananya akan memasarkan pengembangan sektor pariwisata seperti untuk
+            Dimana di area ini rencananya akan memasarkan pengembangan sektor pariwisata seperti untuk
             perhotelan, life style, travel, restoran, villa, dan lainnya. Pengembangan sektor pariwisata di sana juga
             ditautkan dengan kawasan wisata unggulan Jatim dan nasional, yakni kawasan Bromo, Tengger, Semeru
           </p>
-        </div>
-        <div class="mt-6 flex items-center gap-4 self-start text-white/80 md:self-end">
-          <Icon name="mdi:instagram" size="20" />
-          <Icon name="mdi:facebook" size="20" />
-          <Icon name="mdi:whatsapp" size="20" />
         </div>
       </div>
     </div>

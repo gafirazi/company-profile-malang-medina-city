@@ -73,3 +73,19 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Contentful (CMS) Setup
+
+Create a `.env` file with:
+
+```
+CONTENTFUL_SPACE_ID=
+CONTENTFUL_ENVIRONMENT=master
+CONTENTFUL_CDA_TOKEN=
+CONTENTFUL_PREVIEW_TOKEN=
+```
+
+Content models used:
+- `article`: title, slug, excerpt, body (Rich Text), coverImage (Asset), publishedAt (Date)
+- `hero`: title, subtitle, ctaText, ctaLink, bgImage (Asset)
+

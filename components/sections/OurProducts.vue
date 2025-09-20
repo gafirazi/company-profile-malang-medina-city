@@ -10,10 +10,10 @@
             <p class="mt-2 font-sans text-sm text-brand-cream">beragam konsep desain hunian</p>
           </div>
         </div>
-        <ProductCard :img="productImg" />
-        <ProductCard :img="productImg" />
-        <ProductCard :img="productImg" />
-        <ProductCard :img="productImg" />
+        <ProductCard :img="productImg2" />
+        <ProductCard :img="productImg3" />
+        <ProductCard :img="productImg4" />
+        <ProductCard :img="productImg5" />
       </div>
     </div>
   </section>
@@ -23,6 +23,10 @@
 import ProductCard from './OurProductsCard.vue'
 import logo from '@/assets/img/our-products-logo.png'
 import productImg from '@/assets/img/our-products-1.png'
+import productImg2 from '@/assets/img/our-products-2.png'
+import productImg3 from '@/assets/img/our-products-3.png'
+import productImg4 from '@/assets/img/our-products-4.png'
+import productImg5 from '@/assets/img/our-products-5.png'
 
 </script>
 
