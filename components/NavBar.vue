@@ -16,9 +16,9 @@
       </button>
       <transition name="fade">
         <div v-if="open" class="absolute right-4 top-full mt-2 w-56 rounded-md bg-black/50 p-3 backdrop-blur md:hidden">
-          <a href="#lokasi" class="block rounded px-3 py-2 hover:bg-white/10" @click.prevent="scrollTo('lokasi')">lokasi</a>
-          <a href="#keunggulan" class="block rounded px-3 py-2 hover:bg-white/10" @click.prevent="scrollTo('keunggulan')">keunggulan kami</a>
-          <a href="#produk" class="block rounded px-3 py-2 hover:bg-white/10" @click.prevent="scrollTo('produk')">produk kami</a>
+          <a href="#lokasi" class="block rounded px-3 py-2 hover:bg-white/10" @click.prevent="scrollTo('lokasi')">Lokasi</a>
+          <a href="#keunggulan" class="block rounded px-3 py-2 hover:bg-white/10" @click.prevent="scrollTo('keunggulan')">Keunggulan Kami</a>
+          <a href="#produk" class="block rounded px-3 py-2 hover:bg-white/10" @click.prevent="scrollTo('produk')">Produk Kami</a>
           <NuxtLink to="/list-artikel" class="block rounded px-3 py-2 hover:bg-white/10" @click="open = false">Artikel Kami</NuxtLink>
         </div>
       </transition>

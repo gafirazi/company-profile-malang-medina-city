@@ -40,9 +40,12 @@
         <div class="flex flex-col items-end gap-3">
           <img :src="logo" alt="Logo" class="h-16 w-auto" style="filter: brightness(0) invert(1);" />
           <div class="mt-2 flex items-center gap-4 text-white">
-            <Icon name="mdi:facebook" size="22" />
-            <Icon name="mdi:instagram" size="22" />
-            <Icon name="mdi:whatsapp" size="22" />
+            <a href="https://www.facebook.com/malangmedinacity" target="_blank" rel="noopener" aria-label="Facebook Malang Medina City">
+              <Icon name="mdi:facebook" size="22" />
+            </a>
+            <a href="https://www.instagram.com/malangmedinacity/" target="_blank" rel="noopener" aria-label="Instagram Malang Medina City">
+              <Icon name="mdi:instagram" size="22" />
+            </a>
           </div>
         </div>
       </div>
