@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-brand-greenDark py-14 text-white">
+  <section id="keunggulan" class="bg-brand-greenDark py-14 text-white">
     <div class="mx-auto max-w-6xl px-6">
       <h3 class="font-serif text-4xl font-semibold text-brand-cream">KEUNGGULAN KAMI</h3>
       <p class="mt-1 font-sans text-sm italic text-brand-cream">yang terbaik dari Kami untuk hunian Anda</p>

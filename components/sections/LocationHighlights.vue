@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-brand-greenDark py-16 text-white">
+  <section id="lokasi" class="bg-brand-greenDark py-16 text-white">
     <div class="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 md:grid-cols-2">
       <!-- Left column: heading, metrics, small map -->
       <div>

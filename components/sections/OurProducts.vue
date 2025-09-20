@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-brand-greenDark py-16 text-white">
+  <section id="produk" class="bg-brand-greenDark py-16 text-white">
     <div class="mx-auto max-w-6xl px-6">
       <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
         <ProductCard :img="productImg" />
