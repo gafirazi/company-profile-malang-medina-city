@@ -2,13 +2,14 @@
   <nav class="fixed inset-x-0 top-0 z-50 text-white">
     <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/40 to-transparent"></div>
     <div class="relative mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
-      <a href="#" class="flex items-center gap-2">
+      <NuxtLink to="/" class="flex items-center gap-2">
         <img :src="logo" alt="Medina" class="h-8 w-auto" style="filter: brightness(0) invert(1);" />
-      </a>
+      </NuxtLink>
       <ul class="hidden items-center gap-8 font-sans text-sm md:flex">
         <li><a href="#lokasi" class="hover:underline" @click.prevent="scrollTo('lokasi')">Lokasi</a></li>
         <li><a href="#keunggulan" class="hover:underline" @click.prevent="scrollTo('keunggulan')">Keunggulan Kami</a></li>
         <li><a href="#produk" class="hover:underline" @click.prevent="scrollTo('produk')">Produk Kami</a></li>
+        <li><NuxtLink to="/list-artikel" class="hover:underline">Artikel Kami</NuxtLink></li>
       </ul>
       <button type="button" class="md:hidden" @click="open = !open" aria-label="Toggle menu">
         <Icon :name="open ? 'mdi:close' : 'mdi:menu'" size="26" />
@@ -18,6 +19,7 @@
           <a href="#lokasi" class="block rounded px-3 py-2 hover:bg-white/10" @click.prevent="scrollTo('lokasi')">lokasi</a>
           <a href="#keunggulan" class="block rounded px-3 py-2 hover:bg-white/10" @click.prevent="scrollTo('keunggulan')">keunggulan kami</a>
           <a href="#produk" class="block rounded px-3 py-2 hover:bg-white/10" @click.prevent="scrollTo('produk')">produk kami</a>
+          <NuxtLink to="/list-artikel" class="block rounded px-3 py-2 hover:bg-white/10" @click="open = false">Artikel Kami</NuxtLink>
         </div>
       </transition>
     </div>

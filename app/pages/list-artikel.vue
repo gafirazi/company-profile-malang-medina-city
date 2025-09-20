@@ -30,11 +30,13 @@
         </div>
       </div>
     </section>
+    <FooterContact useSolidBg />
   </div>
 </template>
 
 <script setup lang="ts">
 import img from '@/assets/img/article.png'
+import FooterContact from '@/components/sections/FooterContact.vue'
 </script>
 
 <style scoped>

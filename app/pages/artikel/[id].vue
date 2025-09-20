@@ -40,18 +40,7 @@
       </div>
     </section>
   </div>
-  <footer class="bg-[url('/footer.png')] bg-cover bg-center py-10 text-brand-cream">
-    <div class="mx-auto max-w-6xl px-6">
-      <div class="flex justify-end gap-5">
-        <a href="#" aria-label="instagram" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10">
-          <Icon name="mdi:instagram" size="20" />
-        </a>
-        <a href="#" aria-label="whatsapp" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10">
-          <Icon name="mdi:whatsapp" size="20" />
-        </a>
-      </div>
-    </div>
-  </footer>
+  <FooterContact useSolidBg />
 </template>
 
 <script setup lang="ts">
@@ -65,6 +54,7 @@ const title = computed(() => {
 
 import img1 from '@/assets/img/portfolio-1.png'
 import img2 from '@/assets/img/portfolio-2.png'
+import FooterContact from '@/components/sections/FooterContact.vue'
 </script>
 
 <style scoped>

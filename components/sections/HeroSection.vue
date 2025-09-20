@@ -10,7 +10,7 @@
         <div class="text-white max-w-xl">
           <p class="text-2xl md:text-4xl font-bold">HOT PROMO</p>
           <h1 class="mt-1 text-4xl md:text-7xl font-extrabold">DISKON <span class="text-amber-300">SPESIAL</span><br/>KEMERDEKAAN</h1>
-          <p class="mt-2 text-base md:text-lg opacity-90">kuota sangat terbatas, berlaku hanya untuk 20 rumah pertama bulan ini</p>
+          <p class="mt-2 text-base md:text-lg opacity-90">Kuota sangat terbatas, berlaku hanya untuk 20 rumah pertama bulan ini</p>
         </div>
 
         <form @submit.prevent="handleSubmit" class="w-full md:w-[360px] rounded-xl border border-white/30 bg-white/10 p-4 shadow-lg backdrop-blur">
@@ -37,7 +37,7 @@ const bottomBlendStyle = {
     'linear-gradient(to bottom, rgba(16, 26, 21, 0) 0%, rgba(16, 26, 21, 0.75) 60%, rgb(16, 26, 21) 85%, rgb(16, 26, 21) 100%)'
 }
 
-const WEBHOOK_URL = 'https://script.google.com/macros/library/d/1wiv5APEiQmNd9DNtfPOTM4bERANWeHuPSov5HXyA8BU6tpcvTOBuQFLG/10'
+const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbwkgy85Dw7gJ4V2-23ga6f6t36XEKx5CWX0O2OPffv4Z-hL-lh34NaT1w6dlNbg2uZB/exec'
 
 const formData = ref({
   name: '',
@@ -55,16 +55,7 @@ const handleSubmit = async () => {
   message.value = null
   error.value = null
   try {
-    const response = await fetch(WEBHOOK_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: formData.value.name,
-        phone: formData.value.phone,
-        domicile: formData.value.domicile,
-        source: 'HeroSection'
-      })
-    })
+    const response = await fetch(`${WEBHOOK_URL}?nama=${formData.value.name}&nomor_telepon=${formData.value.phone}&domisili=${formData.value.domicile}&type=penawaran`)
 
     if (!response.ok) {
       throw new Error(`Request failed: ${response.status}`)
