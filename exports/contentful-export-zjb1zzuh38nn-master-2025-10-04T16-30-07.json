@@ -1,0 +1,7122 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "article",
+        "type": "ContentType",
+        "createdAt": "2025-09-20T02:02:18.153Z",
+        "updatedAt": "2025-09-20T02:02:18.720Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-09-20T02:02:18.720Z",
+        "firstPublishedAt": "2025-09-20T02:02:18.720Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/content_types/article"
+      },
+      "displayField": "title",
+      "name": "article",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "excerpt",
+          "name": "excerpt",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "body",
+          "name": "body",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "coverImage",
+          "name": "coverImage",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "publishedAt",
+          "name": "publishedAt",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "hero",
+        "type": "ContentType",
+        "createdAt": "2025-09-20T02:03:39.733Z",
+        "updatedAt": "2025-10-04T09:14:58.779Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-10-04T09:14:58.779Z",
+        "firstPublishedAt": "2025-09-20T02:03:40.360Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/content_types/hero"
+      },
+      "displayField": "title",
+      "name": "hero",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "subtitle",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ctaText",
+          "name": "ctaText",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ctaLink",
+          "name": "ctaLink",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "bgImage",
+          "name": "bgImage",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "titleColor",
+          "name": "titleColor",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "defaultValue": {
+            "en-US": "#FFFFFF"
+          },
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "clusterIntro",
+        "type": "ContentType",
+        "createdAt": "2025-09-20T02:30:24.707Z",
+        "updatedAt": "2025-09-20T02:30:25.173Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-09-20T02:30:25.173Z",
+        "firstPublishedAt": "2025-09-20T02:30:25.173Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/content_types/clusterIntro"
+      },
+      "displayField": "title",
+      "name": "clusterIntro",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "tagline",
+          "name": "tagline",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "desc1",
+          "name": "desc1",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "desc2",
+          "name": "desc2",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "testimonial",
+        "type": "ContentType",
+        "createdAt": "2025-09-20T02:43:03.584Z",
+        "updatedAt": "2025-09-20T02:43:04.131Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-09-20T02:43:04.131Z",
+        "firstPublishedAt": "2025-09-20T02:43:04.131Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5QoY646JF75DJIvpKDy7gd"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5QoY646JF75DJIvpKDy7gd"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5QoY646JF75DJIvpKDy7gd"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/content_types/testimonial"
+      },
+      "displayField": "quote",
+      "name": "testimonial",
+      "description": "",
+      "fields": [
+        {
+          "id": "quote",
+          "name": "quote",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "author",
+          "name": "author",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "gallerySlide",
+        "type": "ContentType",
+        "createdAt": "2025-09-20T02:52:11.821Z",
+        "updatedAt": "2025-09-20T02:58:11.835Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-20T02:58:11.835Z",
+        "firstPublishedAt": "2025-09-20T02:52:12.345Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/content_types/gallerySlide"
+      },
+      "displayField": "title",
+      "name": "keunggulanKami",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "paragraph",
+          "name": "paragraph",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "order",
+          "name": "order",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "portfolioItem",
+        "type": "ContentType",
+        "createdAt": "2025-09-20T03:14:13.816Z",
+        "updatedAt": "2025-10-04T08:33:55.025Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-10-04T08:33:55.025Z",
+        "firstPublishedAt": "2025-09-20T03:14:14.423Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/content_types/portfolioItem"
+      },
+      "displayField": "description",
+      "name": "portfolio",
+      "description": "",
+      "fields": [
+        {
+          "id": "image",
+          "name": "image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "description",
+          "name": "description",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "locationHighlights",
+        "type": "ContentType",
+        "createdAt": "2025-09-23T13:46:55.648Z",
+        "updatedAt": "2025-09-23T13:50:21.453Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T13:50:21.453Z",
+        "firstPublishedAt": "2025-09-23T13:46:56.109Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/content_types/locationHighlights"
+      },
+      "displayField": "title",
+      "name": "Lokasi",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "subtitle",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "metrics",
+          "name": "metrics",
+          "type": "Object",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "bigMap",
+          "name": "bigMap",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "rightTitleStrong",
+          "name": "rightTitleStrong",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "rightTitleNormal",
+          "name": "rightTitleNormal",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "rightParagraph",
+          "name": "rightParagraph",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "facilitiesHeading",
+        "type": "ContentType",
+        "createdAt": "2025-09-23T14:08:39.198Z",
+        "updatedAt": "2025-09-23T14:08:39.655Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-09-23T14:08:39.655Z",
+        "firstPublishedAt": "2025-09-23T14:08:39.655Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/content_types/facilitiesHeading"
+      },
+      "displayField": "title",
+      "name": "facilitiesHeading",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "subtitle",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "facility",
+        "type": "ContentType",
+        "createdAt": "2025-09-23T14:10:03.644Z",
+        "updatedAt": "2025-09-23T14:10:04.106Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-09-23T14:10:04.106Z",
+        "firstPublishedAt": "2025-09-23T14:10:04.106Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/content_types/facility"
+      },
+      "displayField": "label",
+      "name": "facility",
+      "description": "",
+      "fields": [
+        {
+          "id": "label",
+          "name": "label",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "icon",
+          "name": "icon",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "order",
+          "name": "order",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "facilityGallery",
+        "type": "ContentType",
+        "createdAt": "2025-09-23T14:11:02.930Z",
+        "updatedAt": "2025-10-04T09:09:33.877Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-10-04T09:09:33.877Z",
+        "firstPublishedAt": "2025-09-23T14:11:03.422Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/content_types/facilityGallery"
+      },
+      "displayField": "description",
+      "name": "facilityGallery",
+      "description": "",
+      "fields": [
+        {
+          "id": "image",
+          "name": "image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "order",
+          "name": "order",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "description",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "productItem",
+        "type": "ContentType",
+        "createdAt": "2025-09-23T15:41:40.186Z",
+        "updatedAt": "2025-09-23T15:41:40.727Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-09-23T15:41:40.727Z",
+        "firstPublishedAt": "2025-09-23T15:41:40.727Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/content_types/productItem"
+      },
+      "displayField": null,
+      "name": "productItem",
+      "description": "",
+      "fields": [
+        {
+          "id": "image",
+          "name": "image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "order",
+          "name": "order",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "siteSettings",
+        "type": "ContentType",
+        "createdAt": "2025-10-04T09:20:22.052Z",
+        "updatedAt": "2025-10-04T09:20:22.477Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-10-04T09:20:22.477Z",
+        "firstPublishedAt": "2025-10-04T09:20:22.477Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/content_types/siteSettings"
+      },
+      "displayField": "facebook",
+      "name": "siteSettings",
+      "description": "Konfigurasi link instagram dan facebook",
+      "fields": [
+        {
+          "id": "facebook",
+          "name": "facebook",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "instagram",
+          "name": "instagram",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zjb1zzuh38nn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-09-20T02:02:18.879Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-09-20T02:02:19.755Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "article",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "excerpt",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "body",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "coverImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "publishedAt",
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zjb1zzuh38nn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 6,
+        "createdAt": "2025-09-20T02:03:40.524Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-10-04T09:14:59.656Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "hero",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "subtitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "ctaText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "ctaLink",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bgImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "titleColor",
+          "settings": {
+            "helpText": "Masukan warna dalam hex code (contoh: #FFFFFF)"
+          },
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zjb1zzuh38nn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-09-20T02:30:25.348Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-09-20T02:30:26.143Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "clusterIntro",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "tagline",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "desc1",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "desc2",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zjb1zzuh38nn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-09-20T02:43:04.207Z",
+        "createdBy": {
+          "sys": {
+            "id": "5QoY646JF75DJIvpKDy7gd",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-09-20T02:43:04.999Z",
+        "updatedBy": {
+          "sys": {
+            "id": "5QoY646JF75DJIvpKDy7gd",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "testimonial",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "quote",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "author",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zjb1zzuh38nn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2025-09-20T02:52:12.462Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-09-20T02:58:12.825Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "gallerySlide",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "paragraph",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "order",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zjb1zzuh38nn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2025-09-20T03:14:14.533Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-10-04T08:33:55.912Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "portfolioItem",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zjb1zzuh38nn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2025-09-23T13:46:56.213Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-09-23T13:50:22.318Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "locationHighlights",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "subtitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "metrics",
+          "widgetId": "objectEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bigMap",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "rightTitleStrong",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "rightTitleNormal",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "rightParagraph",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zjb1zzuh38nn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-09-23T14:08:39.763Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-09-23T14:08:40.522Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "facilitiesHeading",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "subtitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zjb1zzuh38nn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-09-23T14:10:04.188Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-09-23T14:10:04.925Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "facility",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "label",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "icon",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "order",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zjb1zzuh38nn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2025-09-23T14:11:03.538Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-10-04T09:09:34.788Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "facilityGallery",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "order",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zjb1zzuh38nn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-09-23T15:41:40.798Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-09-23T15:41:41.616Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "productItem",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "order",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zjb1zzuh38nn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-10-04T09:20:22.564Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-10-04T09:20:23.362Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ywT41g7UGOVZQEaqm9T3q",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "siteSettings",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "facebook",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "instagram",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "6AnIYAXeHim8S8fa9Dbou1",
+        "type": "Entry",
+        "createdAt": "2025-09-20T02:03:59.462Z",
+        "updatedAt": "2025-09-20T02:07:04.907Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2025-09-20T02:07:04.907Z",
+        "firstPublishedAt": "2025-09-20T02:06:52.053Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "article"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/6AnIYAXeHim8S8fa9Dbou1"
+      },
+      "fields": {
+        "title": {
+          "en-US": "PEMBANGUNAN JEMBATAN"
+        },
+        "slug": {
+          "en-US": "pembangunan-jembatan"
+        },
+        "excerpt": {
+          "en-US": "Jembatan berjarang kurang lebih 50m dari sumber air desa lang-lang & dirancang menggunakan konstruksi CSP yang mulai banyak digunakan pada proyek jembatan & jalan tol"
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Jembatan berjarak kurang lebih 50m dari sumber air desa lang-lang & dirancang menggunakan konstruksi CSP yang mulai banyak digunakan pada proyek jembatan & jalan tol. embatan dirancang menggunakan konstruksi CSP yang mulai banyak digunakan pada proyek jembatan & jalan tol",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "CSP merupakan inovasi struktur baja plat yang dimodifikasi dengan bentuk bergelombang sehingga kekuatan strukturnya meningkat hingga 50 kali lipat.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "CSP yang merupakan produk rakitan ini, memiliki struktur kuat dengan durabilitas tinggi. Hal ini membuat proses pengerjaan di lokasi proyek sangat minim dan bersih karena hanya terdapat kegiatan instalasi dan finishing sehingga lebih cepat dalam proses pelaksanaannya",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "coverImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3EfLwg9BUltWBw1AS1caq5"
+            }
+          }
+        },
+        "publishedAt": {
+          "en-US": "2025-09-20T12:00+07:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "5u7MMnA510LwoYYe2Fa9Tw",
+        "type": "Entry",
+        "createdAt": "2025-09-20T02:17:19.869Z",
+        "updatedAt": "2025-10-04T09:15:35.478Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2025-10-04T09:15:35.478Z",
+        "firstPublishedAt": "2025-09-20T02:18:27.094Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 8,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "hero"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/5u7MMnA510LwoYYe2Fa9Tw"
+      },
+      "fields": {
+        "title": {
+          "en-US": "HOT PROMO 2025"
+        },
+        "subtitle": {
+          "en-US": "DISKON SPESIAL KEMERDEKAAN"
+        },
+        "ctaText": {
+          "en-US": "Kuota sangat terbatas, berlaku hanya untuk 30 rumah pertama bulan ini."
+        },
+        "titleColor": {
+          "en-US": "#FFFFFF"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "G8tKmC5G7eGB9zPpk7UBj",
+        "type": "Entry",
+        "createdAt": "2025-09-20T02:30:53.863Z",
+        "updatedAt": "2025-09-20T05:26:32.219Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2025-09-20T05:26:32.219Z",
+        "firstPublishedAt": "2025-09-20T02:32:32.565Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "clusterIntro"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/G8tKmC5G7eGB9zPpk7UBj"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Cluster Lateefa & Syakeera"
+        },
+        "tagline": {
+          "en-US": "Beragam kebutuhan. Semua terjawab di Malang Medina City"
+        },
+        "desc1": {
+          "en-US": "Menghadirkan tempat tinggal yang menyelaraskan nilai islami, desain arsitektur modern dan lingkungan asri yang terjaga nyaman dilengkapi dengan view gunung Arjuna yang menawan. Kami menyediakan beberapa pilihan konsep hunian, mulai dari inner garden, split level, expandable house, hingga konsep villa, yang dapat mengakomodir beragam kebutuhan keluarga Anda.\n\nDesain kami memaksimalkan pencahayaan dan penghawaan alami, sehingga hunian semakin sehat, nyaman, dan serasa sedang healing. Segera miliki hunian berkelas yang menjadi pilihan cerdas, investasi halal untuk masa depan penuh berkah."
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3mqhxZxDce9U3xY0fDzm1d"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "3u1O3TfsRq40qXrnUrwUsW",
+        "type": "Entry",
+        "createdAt": "2025-09-20T02:43:13.930Z",
+        "updatedAt": "2025-09-20T02:43:39.415Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-20T02:43:39.415Z",
+        "firstPublishedAt": "2025-09-20T02:43:39.415Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5QoY646JF75DJIvpKDy7gd"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5QoY646JF75DJIvpKDy7gd"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5QoY646JF75DJIvpKDy7gd"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "testimonial"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/3u1O3TfsRq40qXrnUrwUsW"
+      },
+      "fields": {
+        "quote": {
+          "en-US": "Saya puas dengan kualitas bangunan yang diserah terimakan, proses pembayaran mudah dan sesuai dengan syariat Islam, jadinya tidak perlu khawatir lagi."
+        },
+        "author": {
+          "en-US": "Bapak Syaiful - Surabaya"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "YZkfutqedotNidudyxw3T",
+        "type": "Entry",
+        "createdAt": "2025-09-20T02:44:24.150Z",
+        "updatedAt": "2025-09-20T02:44:35.482Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-20T02:44:35.482Z",
+        "firstPublishedAt": "2025-09-20T02:44:35.482Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5QoY646JF75DJIvpKDy7gd"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5QoY646JF75DJIvpKDy7gd"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5QoY646JF75DJIvpKDy7gd"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "testimonial"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/YZkfutqedotNidudyxw3T"
+      },
+      "fields": {
+        "quote": {
+          "en-US": "Lokasi strategis, akses dekat kemana saja, hunian nyaman untuk keluarga kami."
+        },
+        "author": {
+          "en-US": "Ibu Rina - Malang"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "44wMLf5NPvD9wuaRsPkult",
+        "type": "Entry",
+        "createdAt": "2025-09-20T02:52:31.091Z",
+        "updatedAt": "2025-09-20T03:02:14.457Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2025-09-20T03:02:14.457Z",
+        "firstPublishedAt": "2025-09-20T02:55:53.470Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "gallerySlide"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/44wMLf5NPvD9wuaRsPkult"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Lokasi Strategis"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5Gk8DLk24g9ySqoci2XL7N"
+            }
+          }
+        },
+        "paragraph": {
+          "en-US": "Berada di jalur malang-surabaya, serta jalur utama malang- kota wisata Batu, membuat Malang Medina City menjadi pilihan tempat tinggal sekaligus investasi masa depan yang menjanjikan. Memberikan kemudahan akses menuju tempat-tempat strategis Kota Malang\n\nSelain itu Malang Medina City juga bersebelahan langsung dengan lahan KEK Singhasari, yang tentu akan mengangkat nilai property yang Anda miliki."
+        },
+        "order": {
+          "en-US": 1
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "3UVYHzWSWAF60R069CN8f8",
+        "type": "Entry",
+        "createdAt": "2025-09-20T02:56:29.001Z",
+        "updatedAt": "2025-09-20T02:58:37.163Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2025-09-20T02:58:37.163Z",
+        "firstPublishedAt": "2025-09-20T02:57:37.367Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "gallerySlide"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/3UVYHzWSWAF60R069CN8f8"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Akses Mudah"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2EZkEz5Xfuf0aq3ezs60d7"
+            }
+          }
+        },
+        "paragraph": {
+          "en-US": "Dekat tol dan fasilitas umum untuk menunjang mobilitas harian.\n\nLingkungan nyaman dengan pemandangan pegunungan."
+        },
+        "order": {
+          "en-US": 2
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "gvueYINwN2gwXt8QMNfGz",
+        "type": "Entry",
+        "createdAt": "2025-09-20T03:14:25.473Z",
+        "updatedAt": "2025-10-04T08:37:02.080Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-10-04T08:37:02.080Z",
+        "firstPublishedAt": "2025-09-20T03:15:13.377Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "portfolioItem"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/gvueYINwN2gwXt8QMNfGz"
+      },
+      "fields": {
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6slZeF0s8fV6zubn1w6mYJ"
+            }
+          }
+        },
+        "description": {
+          "en-US": "rumah tipe 30"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "6cAcuzmsU1Ie4YrEC2GWHn",
+        "type": "Entry",
+        "createdAt": "2025-09-20T03:15:23.018Z",
+        "updatedAt": "2025-10-04T08:37:25.600Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-10-04T08:37:25.600Z",
+        "firstPublishedAt": "2025-09-20T03:15:53.322Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "portfolioItem"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/6cAcuzmsU1Ie4YrEC2GWHn"
+      },
+      "fields": {
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6Z5BSS5YNs9vnyOqLk1yZD"
+            }
+          }
+        },
+        "description": {
+          "en-US": "rumah tipe 60"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "30rYzFpJES6PdfrIoL5KrI",
+        "type": "Entry",
+        "createdAt": "2025-09-20T03:16:16.611Z",
+        "updatedAt": "2025-10-04T08:37:15.514Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-10-04T08:37:15.514Z",
+        "firstPublishedAt": "2025-09-20T03:17:04.576Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "portfolioItem"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/30rYzFpJES6PdfrIoL5KrI"
+      },
+      "fields": {
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3XbFQL45yq9VSeHgCVi9BA"
+            }
+          }
+        },
+        "description": {
+          "en-US": "rumah tipe 36"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "4kZzEaIh3wcwwUgGbQtNxJ",
+        "type": "Entry",
+        "createdAt": "2025-09-20T05:21:11.659Z",
+        "updatedAt": "2025-09-20T05:23:37.281Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2025-09-20T05:23:37.281Z",
+        "firstPublishedAt": "2025-09-20T05:22:52.352Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "article"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/4kZzEaIh3wcwwUgGbQtNxJ"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Ekspansi MMC"
+        },
+        "slug": {
+          "en-US": "ekspansi-mmc"
+        },
+        "excerpt": {
+          "en-US": "Jembatan berjarang kurang lebih 50m dari sumber air desa lang-lang & dirancang menggunakan konstruksi CSP yang mulai banyak digunakan pada proyek jembatan & jalan tol"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "MMC berhasil melakukan ekspansi ke provinsi Jawa Tengah.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Jembatan berjarang kurang lebih 50m dari sumber air desa lang-lang & dirancang menggunakan konstruksi CSP yang mulai banyak digunakan pada proyek jembatan & jalan tol",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "coverImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5IoFiBMtBVPZFS80zfzZ49"
+            }
+          }
+        },
+        "publishedAt": {
+          "en-US": "2025-09-21T00:00+07:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "7DdkQfOSlK6j9q3Ukr4aEU",
+        "type": "Entry",
+        "createdAt": "2025-09-20T05:35:54.548Z",
+        "updatedAt": "2025-09-20T05:35:54.548Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "portfolioItem"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/7DdkQfOSlK6j9q3Ukr4aEU"
+      },
+      "fields": {
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "3jaNWd04qM6KnMeiwqsyrm",
+        "type": "Entry",
+        "createdAt": "2025-09-23T13:50:27.590Z",
+        "updatedAt": "2025-09-23T13:53:47.223Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2025-09-23T13:53:47.223Z",
+        "firstPublishedAt": "2025-09-23T13:53:47.223Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "locationHighlights"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/3jaNWd04qM6KnMeiwqsyrm"
+      },
+      "fields": {
+        "title": {
+          "en-US": "LOKASI"
+        },
+        "subtitle": {
+          "en-US": "strategis & menguntungkan"
+        },
+        "metrics": {
+          "en-US": [
+            {
+              "num": 10,
+              "caption": "dari tol singosari"
+            },
+            {
+              "num": 11,
+              "caption": "dari bentoel tbk"
+            },
+            {
+              "num": 11,
+              "caption": "ke al mahira IIBS"
+            },
+            {
+              "num": 13,
+              "caption": "dari ITN 2"
+            },
+            {
+              "num": 14,
+              "caption": "ke hawaii waterpark"
+            }
+          ]
+        },
+        "bigMap": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6rT6wkcVREN9Hpxp6LHmU3"
+            }
+          }
+        },
+        "rightTitleStrong": {
+          "en-US": "Rencana KEK Singhasari"
+        },
+        "rightTitleNormal": {
+          "en-US": "bersebelahan dengan area Malang Medina City"
+        },
+        "rightParagraph": {
+          "en-US": "Dimana di area ini rencananya akan memasarkan pengembangan sektor pariwisata seperti untuk perhotelan, life style, travel, restoran, villa, dan lainnya. Pengembangan sektor pariwisata di sana juga ditautkan dengan kawasan wisata unggulan Jatim dan nasional, yakni kawasan Bromo, Tengger, Semeru."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "2IXPUpra4xD12PQe7Ol7aV",
+        "type": "Entry",
+        "createdAt": "2025-09-23T14:15:39.031Z",
+        "updatedAt": "2025-09-23T14:16:10.027Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T14:16:10.027Z",
+        "firstPublishedAt": "2025-09-23T14:16:10.027Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "facilitiesHeading"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/2IXPUpra4xD12PQe7Ol7aV"
+      },
+      "fields": {
+        "title": {
+          "en-US": "FASILITAS KAMI"
+        },
+        "subtitle": {
+          "en-US": "siap melengkapi kebutuhan keluarga Anda"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "5I4FcthW7hpaSfoWfoA4AU",
+        "type": "Entry",
+        "createdAt": "2025-09-23T14:16:25.513Z",
+        "updatedAt": "2025-09-23T14:17:12.236Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T14:17:12.236Z",
+        "firstPublishedAt": "2025-09-23T14:17:12.236Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "facility"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/5I4FcthW7hpaSfoWfoA4AU"
+      },
+      "fields": {
+        "label": {
+          "en-US": "Masjid"
+        },
+        "icon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5oDWx7SUdSBjthDpvT69vN"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "5N1OCFrux2TYiPnhbSqGio",
+        "type": "Entry",
+        "createdAt": "2025-09-23T14:17:29.643Z",
+        "updatedAt": "2025-09-23T14:18:40.848Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-09-23T14:18:40.848Z",
+        "firstPublishedAt": "2025-09-23T14:18:40.848Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "facility"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/5N1OCFrux2TYiPnhbSqGio"
+      },
+      "fields": {
+        "label": {
+          "en-US": "Club House"
+        },
+        "icon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7aP8x0riZEvEVwQi6trTCZ"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "6UrhUdAErJ3gIPuDyw7Eft",
+        "type": "Entry",
+        "createdAt": "2025-09-23T14:18:55.874Z",
+        "updatedAt": "2025-09-23T14:25:08.883Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T14:25:08.883Z",
+        "firstPublishedAt": "2025-09-23T14:25:08.883Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "facility"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/6UrhUdAErJ3gIPuDyw7Eft"
+      },
+      "fields": {
+        "label": {
+          "en-US": "Food Arcade"
+        },
+        "icon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "43bWfjsTHekgaeorOu1Fgr"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "5y71y1VLawBnVky8AP1Nyz",
+        "type": "Entry",
+        "createdAt": "2025-09-23T14:26:19.719Z",
+        "updatedAt": "2025-09-23T14:26:59.354Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T14:26:59.354Z",
+        "firstPublishedAt": "2025-09-23T14:26:59.354Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "facility"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/5y71y1VLawBnVky8AP1Nyz"
+      },
+      "fields": {
+        "label": {
+          "en-US": "Fas. Pendidikan"
+        },
+        "icon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4l5Lws5KVvTPnXZNITsKvp"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "2nJwnshyR1qyuTKh6YARmQ",
+        "type": "Entry",
+        "createdAt": "2025-09-23T14:27:30.998Z",
+        "updatedAt": "2025-09-23T14:28:07.954Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-09-23T14:28:07.954Z",
+        "firstPublishedAt": "2025-09-23T14:28:07.954Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "facility"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/2nJwnshyR1qyuTKh6YARmQ"
+      },
+      "fields": {
+        "label": {
+          "en-US": "Lapangan"
+        },
+        "icon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1LmKotvBV8S5ucxjdBwVjL"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "7GvuSarc76ZM86xSMA6uX8",
+        "type": "Entry",
+        "createdAt": "2025-09-23T14:28:16.744Z",
+        "updatedAt": "2025-09-23T14:32:07.799Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-09-23T14:32:07.799Z",
+        "firstPublishedAt": "2025-09-23T14:31:05.317Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "facility"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/7GvuSarc76ZM86xSMA6uX8"
+      },
+      "fields": {
+        "label": {
+          "en-US": "Gate"
+        },
+        "icon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2QVYlFWkaye493zfKcDBuN"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "6g9BKzugr5fu0QotvOfHc5",
+        "type": "Entry",
+        "createdAt": "2025-09-23T14:44:01.900Z",
+        "updatedAt": "2025-09-23T14:44:48.330Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T14:44:48.330Z",
+        "firstPublishedAt": "2025-09-23T14:44:48.330Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "facility"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/6g9BKzugr5fu0QotvOfHc5"
+      },
+      "fields": {
+        "label": {
+          "en-US": "Lap. Berkuda"
+        },
+        "icon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "79ssf7CyNzJXCV5M3yavSA"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "5mdCT8Bbzm3yZzHEHiJLP5",
+        "type": "Entry",
+        "createdAt": "2025-09-23T14:45:01.604Z",
+        "updatedAt": "2025-09-23T14:46:25.358Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T14:46:25.358Z",
+        "firstPublishedAt": "2025-09-23T14:46:25.358Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "facility"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/5mdCT8Bbzm3yZzHEHiJLP5"
+      },
+      "fields": {
+        "label": {
+          "en-US": "Pasar"
+        },
+        "icon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "26USGyqgtstfRlNlyY1p0D"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "4lrouohlk5BPhwjbmvT9cy",
+        "type": "Entry",
+        "createdAt": "2025-09-23T14:46:31.028Z",
+        "updatedAt": "2025-09-23T14:47:06.183Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-09-23T14:47:06.183Z",
+        "firstPublishedAt": "2025-09-23T14:47:06.183Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "facility"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/4lrouohlk5BPhwjbmvT9cy"
+      },
+      "fields": {
+        "label": {
+          "en-US": "Glamping"
+        },
+        "icon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5HFl1GcXNurrh3WXxYhaYX"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "MQifx0AMtk6DfRv7TUcv9",
+        "type": "Entry",
+        "createdAt": "2025-09-23T14:47:24.934Z",
+        "updatedAt": "2025-10-04T09:09:57.250Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-10-04T09:09:57.250Z",
+        "firstPublishedAt": "2025-09-23T15:12:00.718Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "facilityGallery"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/MQifx0AMtk6DfRv7TUcv9"
+      },
+      "fields": {
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3iqUQSlXh2B00hn5un8JvC"
+            }
+          }
+        },
+        "description": {
+          "en-US": "fasilitas 1"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "5NxxrIx8UMdopkftpigTky",
+        "type": "Entry",
+        "createdAt": "2025-09-23T15:12:51.328Z",
+        "updatedAt": "2025-10-04T09:11:05.175Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2025-10-04T09:11:05.175Z",
+        "firstPublishedAt": "2025-09-23T15:13:18.861Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "facilityGallery"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/5NxxrIx8UMdopkftpigTky"
+      },
+      "fields": {
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "22Cd4HoDxFk2weILrZqDNQ"
+            }
+          }
+        },
+        "description": {
+          "en-US": "fasilitas 2"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "7IffUjCtYQXvYdpFCRzuO0",
+        "type": "Entry",
+        "createdAt": "2025-09-23T15:13:27.967Z",
+        "updatedAt": "2025-10-04T09:11:16.491Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2025-10-04T09:11:16.491Z",
+        "firstPublishedAt": "2025-09-23T15:13:52.702Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "facilityGallery"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/7IffUjCtYQXvYdpFCRzuO0"
+      },
+      "fields": {
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4N6QIAD2KrkQn4JR7eFEm"
+            }
+          }
+        },
+        "description": {
+          "en-US": "fasilitas 3"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "437kFCAOxXk8RQaND8woo",
+        "type": "Entry",
+        "createdAt": "2025-09-23T15:43:24.465Z",
+        "updatedAt": "2025-09-23T15:44:46.764Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-09-23T15:44:46.764Z",
+        "firstPublishedAt": "2025-09-23T15:44:46.764Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "productItem"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/437kFCAOxXk8RQaND8woo"
+      },
+      "fields": {
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2t7rHo6CGEAVmvWmPCG4MW"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "60mmNsmHbpWeyMEQnrau90",
+        "type": "Entry",
+        "createdAt": "2025-09-23T15:44:59.101Z",
+        "updatedAt": "2025-09-23T15:46:05.474Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-09-23T15:46:05.474Z",
+        "firstPublishedAt": "2025-09-23T15:46:05.474Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "productItem"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/60mmNsmHbpWeyMEQnrau90"
+      },
+      "fields": {
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "564Z0x6FC2sthZKmaNAh3O"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "2v8faC7Tw0ifqK5EvNqRvb",
+        "type": "Entry",
+        "createdAt": "2025-09-23T16:30:02.549Z",
+        "updatedAt": "2025-09-23T16:30:47.849Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-09-23T16:30:47.849Z",
+        "firstPublishedAt": "2025-09-23T16:30:47.849Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "productItem"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/2v8faC7Tw0ifqK5EvNqRvb"
+      },
+      "fields": {
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4yuWKGNGW28ARjZ0omhbl6"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "3JBR86cyPHx25iljkYXhHY",
+        "type": "Entry",
+        "createdAt": "2025-09-23T16:30:58.560Z",
+        "updatedAt": "2025-09-23T16:31:42.873Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-09-23T16:31:42.873Z",
+        "firstPublishedAt": "2025-09-23T16:31:42.873Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "productItem"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/3JBR86cyPHx25iljkYXhHY"
+      },
+      "fields": {
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1nH7YujOzbTgNTKsbmJRXz"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "50nOLWtd3Sq8dSY0TSrD7Z",
+        "type": "Entry",
+        "createdAt": "2025-09-23T16:31:51.245Z",
+        "updatedAt": "2025-09-23T16:32:21.542Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-09-23T16:32:21.542Z",
+        "firstPublishedAt": "2025-09-23T16:32:21.542Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "productItem"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/50nOLWtd3Sq8dSY0TSrD7Z"
+      },
+      "fields": {
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2sUJWJuTguEQZEIkQgnM2V"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "4ABsiWrweHS6fhpR6nQfzL",
+        "type": "Entry",
+        "createdAt": "2025-10-04T09:20:33.739Z",
+        "updatedAt": "2025-10-04T09:20:53.645Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-10-04T09:20:53.645Z",
+        "firstPublishedAt": "2025-10-04T09:20:53.645Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "siteSettings"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/entries/4ABsiWrweHS6fhpR6nQfzL"
+      },
+      "fields": {
+        "facebook": {
+          "en-US": "https://www.facebook.com/malangmedinacity"
+        },
+        "instagram": {
+          "en-US": "https://www.instagram.com/malangmedinacity/"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "2MLOzNmbmMU1ijCPuMHx9z",
+        "type": "Asset",
+        "createdAt": "2025-09-20T02:04:55.613Z",
+        "updatedAt": "2025-09-20T02:04:55.613Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "fieldStatus": {
+          "*": {
+            "en-US": "draft"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/2MLOzNmbmMU1ijCPuMHx9z"
+      },
+      "fields": {
+        "title": {
+          "en-US": ""
+        },
+        "description": {
+          "en-US": ""
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "3EfLwg9BUltWBw1AS1caq5",
+        "type": "Asset",
+        "createdAt": "2025-09-20T02:05:11.966Z",
+        "updatedAt": "2025-09-20T02:05:29.991Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-09-20T02:05:29.991Z",
+        "firstPublishedAt": "2025-09-20T02:05:29.991Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/3EfLwg9BUltWBw1AS1caq5"
+      },
+      "fields": {
+        "title": {
+          "en-US": "artikel 1 image"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/3EfLwg9BUltWBw1AS1caq5/dbc5e72ff237922d75c96097e3d9c4d8/article.CBR9LjhG.png",
+            "details": {
+              "size": 4172863,
+              "image": {
+                "width": 1578,
+                "height": 1043
+              }
+            },
+            "fileName": "article.CBR9LjhG.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "3mqhxZxDce9U3xY0fDzm1d",
+        "type": "Asset",
+        "createdAt": "2025-09-20T02:32:47.378Z",
+        "updatedAt": "2025-09-20T02:33:10.320Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-20T02:33:10.320Z",
+        "firstPublishedAt": "2025-09-20T02:33:10.320Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/3mqhxZxDce9U3xY0fDzm1d"
+      },
+      "fields": {
+        "title": {
+          "en-US": "cluster-intro (1)"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/3mqhxZxDce9U3xY0fDzm1d/c72fca6d4d0df5a5056cd076bc3fc39b/cluster-intro__1_.png",
+            "details": {
+              "size": 932653,
+              "image": {
+                "width": 604,
+                "height": 588
+              }
+            },
+            "fileName": "cluster-intro (1).png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "5Gk8DLk24g9ySqoci2XL7N",
+        "type": "Asset",
+        "createdAt": "2025-09-20T02:54:26.757Z",
+        "updatedAt": "2025-09-20T05:30:52.590Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2025-09-20T05:30:52.590Z",
+        "firstPublishedAt": "2025-09-20T02:54:45.176Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/5Gk8DLk24g9ySqoci2XL7N"
+      },
+      "fields": {
+        "title": {
+          "en-US": "facilities-strip-img-1 (1)"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/5Gk8DLk24g9ySqoci2XL7N/a2545c12f6b1aa423f2aa36a65ce1abd/facilities-strip-img-2__1_.png",
+            "details": {
+              "size": 4330602,
+              "image": {
+                "width": 1820,
+                "height": 1256
+              }
+            },
+            "fileName": "facilities-strip-img-2 (1).png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "8yW9C278TxUTnR4GoCvVy",
+        "type": "Asset",
+        "createdAt": "2025-09-20T02:56:57.382Z",
+        "updatedAt": "2025-09-20T02:56:57.382Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "fieldStatus": {
+          "*": {
+            "en-US": "draft"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/8yW9C278TxUTnR4GoCvVy"
+      },
+      "fields": {
+        "title": {
+          "en-US": ""
+        },
+        "description": {
+          "en-US": ""
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "2EZkEz5Xfuf0aq3ezs60d7",
+        "type": "Asset",
+        "createdAt": "2025-09-20T02:57:05.052Z",
+        "updatedAt": "2025-09-20T02:57:17.611Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-20T02:57:17.611Z",
+        "firstPublishedAt": "2025-09-20T02:57:17.611Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/2EZkEz5Xfuf0aq3ezs60d7"
+      },
+      "fields": {
+        "title": {
+          "en-US": "facilities-strip-img-2 (1)"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/2EZkEz5Xfuf0aq3ezs60d7/b25472e2eb3915e680162d9247448eb7/facilities-strip-img-2__1_.png",
+            "details": {
+              "size": 4330602,
+              "image": {
+                "width": 1820,
+                "height": 1256
+              }
+            },
+            "fileName": "facilities-strip-img-2 (1).png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "6slZeF0s8fV6zubn1w6mYJ",
+        "type": "Asset",
+        "createdAt": "2025-09-20T03:14:28.293Z",
+        "updatedAt": "2025-09-20T03:15:05.001Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-20T03:15:05.001Z",
+        "firstPublishedAt": "2025-09-20T03:15:05.001Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/6slZeF0s8fV6zubn1w6mYJ"
+      },
+      "fields": {
+        "title": {
+          "en-US": "portfolio-1.Fh0iHxER"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/6slZeF0s8fV6zubn1w6mYJ/8d0a7ef750f2c48ff95f509687a5ea7a/portfolio-1.Fh0iHxER.png",
+            "details": {
+              "size": 2712250,
+              "image": {
+                "width": 1900,
+                "height": 1256
+              }
+            },
+            "fileName": "portfolio-1.Fh0iHxER.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "6Z5BSS5YNs9vnyOqLk1yZD",
+        "type": "Asset",
+        "createdAt": "2025-09-20T03:15:30.747Z",
+        "updatedAt": "2025-09-20T03:15:44.968Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-20T03:15:44.968Z",
+        "firstPublishedAt": "2025-09-20T03:15:44.968Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/6Z5BSS5YNs9vnyOqLk1yZD"
+      },
+      "fields": {
+        "title": {
+          "en-US": "portfolio-2.D-WTlU0g"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/6Z5BSS5YNs9vnyOqLk1yZD/66066de8469f36b6166f7cb5e1aae7ee/portfolio-2.D-WTlU0g.png",
+            "details": {
+              "size": 3019117,
+              "image": {
+                "width": 1900,
+                "height": 1256
+              }
+            },
+            "fileName": "portfolio-2.D-WTlU0g.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "3XbFQL45yq9VSeHgCVi9BA",
+        "type": "Asset",
+        "createdAt": "2025-09-20T03:16:28.875Z",
+        "updatedAt": "2025-10-04T08:29:44.140Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-10-04T08:29:44.140Z",
+        "firstPublishedAt": "2025-09-20T03:16:47.404Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/3XbFQL45yq9VSeHgCVi9BA"
+      },
+      "fields": {
+        "title": {
+          "en-US": "portfolio-3.B4-Jn4lj"
+        },
+        "description": {
+          "en-US": "test"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/3XbFQL45yq9VSeHgCVi9BA/17c5107b8321806ff81d2c4ba2aa31e9/portfolio-3.B4-Jn4lj.png",
+            "details": {
+              "size": 3767847,
+              "image": {
+                "width": 1900,
+                "height": 1256
+              }
+            },
+            "fileName": "portfolio-3.B4-Jn4lj.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "5IoFiBMtBVPZFS80zfzZ49",
+        "type": "Asset",
+        "createdAt": "2025-09-20T05:22:03.829Z",
+        "updatedAt": "2025-09-20T05:22:31.593Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-20T05:22:31.593Z",
+        "firstPublishedAt": "2025-09-20T05:22:31.593Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/5IoFiBMtBVPZFS80zfzZ49"
+      },
+      "fields": {
+        "title": {
+          "en-US": "cluster-intro (1)"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/5IoFiBMtBVPZFS80zfzZ49/396cb64ed078f5f83204954d109ddf93/cluster-intro__1_.png",
+            "details": {
+              "size": 932653,
+              "image": {
+                "width": 604,
+                "height": 588
+              }
+            },
+            "fileName": "cluster-intro (1).png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "6rT6wkcVREN9Hpxp6LHmU3",
+        "type": "Asset",
+        "createdAt": "2025-09-23T13:51:14.717Z",
+        "updatedAt": "2025-09-23T13:51:41.461Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T13:51:41.461Z",
+        "firstPublishedAt": "2025-09-23T13:51:41.461Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/6rT6wkcVREN9Hpxp6LHmU3"
+      },
+      "fields": {
+        "title": {
+          "en-US": "location-highlights"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/6rT6wkcVREN9Hpxp6LHmU3/4a32cce9ad538ad333763fd93d2a3954/location-highlights.png",
+            "details": {
+              "size": 4635615,
+              "image": {
+                "width": 1738,
+                "height": 1609
+              }
+            },
+            "fileName": "location-highlights.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "5oDWx7SUdSBjthDpvT69vN",
+        "type": "Asset",
+        "createdAt": "2025-09-23T14:16:47.293Z",
+        "updatedAt": "2025-09-23T14:17:02.561Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T14:17:02.561Z",
+        "firstPublishedAt": "2025-09-23T14:17:02.561Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/5oDWx7SUdSBjthDpvT69vN"
+      },
+      "fields": {
+        "title": {
+          "en-US": "facilities-strip-1"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/5oDWx7SUdSBjthDpvT69vN/b798e8b951ec9ed531e6dc541370d60a/facilities-strip-1.png",
+            "details": {
+              "size": 32802,
+              "image": {
+                "width": 414,
+                "height": 415
+              }
+            },
+            "fileName": "facilities-strip-1.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "7aP8x0riZEvEVwQi6trTCZ",
+        "type": "Asset",
+        "createdAt": "2025-09-23T14:17:39.397Z",
+        "updatedAt": "2025-09-23T14:18:28.351Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T14:18:28.351Z",
+        "firstPublishedAt": "2025-09-23T14:18:28.351Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/7aP8x0riZEvEVwQi6trTCZ"
+      },
+      "fields": {
+        "title": {
+          "en-US": "facilities-strip-2"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/7aP8x0riZEvEVwQi6trTCZ/06191f422c00653ee44d90fd3f9e551c/facilities-strip-2.png",
+            "details": {
+              "size": 33614,
+              "image": {
+                "width": 413,
+                "height": 413
+              }
+            },
+            "fileName": "facilities-strip-2.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "43bWfjsTHekgaeorOu1Fgr",
+        "type": "Asset",
+        "createdAt": "2025-09-23T14:19:44.480Z",
+        "updatedAt": "2025-09-23T14:22:55.173Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T14:22:55.173Z",
+        "firstPublishedAt": "2025-09-23T14:22:55.173Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/43bWfjsTHekgaeorOu1Fgr"
+      },
+      "fields": {
+        "title": {
+          "en-US": "facilities-strip-3"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/43bWfjsTHekgaeorOu1Fgr/3bb094225692df153006a01685bb7c94/facilities-strip-3.png",
+            "details": {
+              "size": 34992,
+              "image": {
+                "width": 415,
+                "height": 415
+              }
+            },
+            "fileName": "facilities-strip-3.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "4l5Lws5KVvTPnXZNITsKvp",
+        "type": "Asset",
+        "createdAt": "2025-09-23T14:26:31.900Z",
+        "updatedAt": "2025-09-23T14:26:49.639Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T14:26:49.639Z",
+        "firstPublishedAt": "2025-09-23T14:26:49.639Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/4l5Lws5KVvTPnXZNITsKvp"
+      },
+      "fields": {
+        "title": {
+          "en-US": "facilities-strip-4"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/4l5Lws5KVvTPnXZNITsKvp/bdeeb5254576e53dacf84f6ca2c036eb/facilities-strip-4.png",
+            "details": {
+              "size": 31317,
+              "image": {
+                "width": 415,
+                "height": 420
+              }
+            },
+            "fileName": "facilities-strip-4.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "1LmKotvBV8S5ucxjdBwVjL",
+        "type": "Asset",
+        "createdAt": "2025-09-23T14:27:39.301Z",
+        "updatedAt": "2025-09-23T14:27:59.123Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-09-23T14:27:59.123Z",
+        "firstPublishedAt": "2025-09-23T14:27:59.123Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/1LmKotvBV8S5ucxjdBwVjL"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Lapangan"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/1LmKotvBV8S5ucxjdBwVjL/3fd392aa93d82d611056e37863b80a74/facilities-strip-5.png",
+            "details": {
+              "size": 42253,
+              "image": {
+                "width": 418,
+                "height": 423
+              }
+            },
+            "fileName": "facilities-strip-5.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "2QVYlFWkaye493zfKcDBuN",
+        "type": "Asset",
+        "createdAt": "2025-09-23T14:30:46.205Z",
+        "updatedAt": "2025-09-23T14:31:48.221Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2025-09-23T14:31:48.221Z",
+        "firstPublishedAt": "2025-09-23T14:30:58.243Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/2QVYlFWkaye493zfKcDBuN"
+      },
+      "fields": {
+        "title": {
+          "en-US": "facilities-strip-6"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/2QVYlFWkaye493zfKcDBuN/6d1dae4d333ca7bda85d3f85576c64e0/facilities-strip-6.png",
+            "details": {
+              "size": 32499,
+              "image": {
+                "width": 439,
+                "height": 453
+              }
+            },
+            "fileName": "facilities-strip-6.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "79ssf7CyNzJXCV5M3yavSA",
+        "type": "Asset",
+        "createdAt": "2025-09-23T14:44:13.233Z",
+        "updatedAt": "2025-09-23T14:44:37.046Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T14:44:37.046Z",
+        "firstPublishedAt": "2025-09-23T14:44:37.046Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/79ssf7CyNzJXCV5M3yavSA"
+      },
+      "fields": {
+        "title": {
+          "en-US": "facilities-strip-7"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/79ssf7CyNzJXCV5M3yavSA/29a63c24ca756099436f22486a57055d/facilities-strip-7.png",
+            "details": {
+              "size": 32558,
+              "image": {
+                "width": 408,
+                "height": 413
+              }
+            },
+            "fileName": "facilities-strip-7.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "26USGyqgtstfRlNlyY1p0D",
+        "type": "Asset",
+        "createdAt": "2025-09-23T14:45:08.852Z",
+        "updatedAt": "2025-09-23T14:46:12.240Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-09-23T14:46:12.240Z",
+        "firstPublishedAt": "2025-09-23T14:46:12.240Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/26USGyqgtstfRlNlyY1p0D"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Pasar"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/26USGyqgtstfRlNlyY1p0D/ffaadc6ad3731c4b1dde39147f465a2d/facilities-strip-8.png",
+            "details": {
+              "size": 29219,
+              "image": {
+                "width": 412,
+                "height": 416
+              }
+            },
+            "fileName": "facilities-strip-8.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "5HFl1GcXNurrh3WXxYhaYX",
+        "type": "Asset",
+        "createdAt": "2025-09-23T14:46:39.936Z",
+        "updatedAt": "2025-09-23T14:46:57.609Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T14:46:57.609Z",
+        "firstPublishedAt": "2025-09-23T14:46:57.609Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/5HFl1GcXNurrh3WXxYhaYX"
+      },
+      "fields": {
+        "title": {
+          "en-US": "facilities-strip-9"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/5HFl1GcXNurrh3WXxYhaYX/a6daa5aec26970490b1a7b7fb74a211e/facilities-strip-9.png",
+            "details": {
+              "size": 35095,
+              "image": {
+                "width": 403,
+                "height": 413
+              }
+            },
+            "fileName": "facilities-strip-9.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "3iqUQSlXh2B00hn5un8JvC",
+        "type": "Asset",
+        "createdAt": "2025-09-23T15:12:05.879Z",
+        "updatedAt": "2025-09-23T15:12:28.005Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T15:12:28.005Z",
+        "firstPublishedAt": "2025-09-23T15:12:28.005Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/3iqUQSlXh2B00hn5un8JvC"
+      },
+      "fields": {
+        "title": {
+          "en-US": "facilities-strip-img-1"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/3iqUQSlXh2B00hn5un8JvC/dab772820015fe6e73874b9eb0a5219c/facilities-strip-img-1.png",
+            "details": {
+              "size": 4960254,
+              "image": {
+                "width": 1819,
+                "height": 1256
+              }
+            },
+            "fileName": "facilities-strip-img-1.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "22Cd4HoDxFk2weILrZqDNQ",
+        "type": "Asset",
+        "createdAt": "2025-09-23T15:12:54.236Z",
+        "updatedAt": "2025-09-23T15:13:12.212Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T15:13:12.212Z",
+        "firstPublishedAt": "2025-09-23T15:13:12.212Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/22Cd4HoDxFk2weILrZqDNQ"
+      },
+      "fields": {
+        "title": {
+          "en-US": "facilities-strip-img-2"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/22Cd4HoDxFk2weILrZqDNQ/649ccb7bcf75528c6a228b36e7d49361/facilities-strip-img-2.png",
+            "details": {
+              "size": 4330602,
+              "image": {
+                "width": 1820,
+                "height": 1256
+              }
+            },
+            "fileName": "facilities-strip-img-2.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "4N6QIAD2KrkQn4JR7eFEm",
+        "type": "Asset",
+        "createdAt": "2025-09-23T15:13:30.743Z",
+        "updatedAt": "2025-09-23T15:13:48.369Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T15:13:48.369Z",
+        "firstPublishedAt": "2025-09-23T15:13:48.369Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/4N6QIAD2KrkQn4JR7eFEm"
+      },
+      "fields": {
+        "title": {
+          "en-US": "facilities-strip-img-3"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/4N6QIAD2KrkQn4JR7eFEm/ff61124cfca61f30472c808bb7b9714d/facilities-strip-img-3.png",
+            "details": {
+              "size": 4536552,
+              "image": {
+                "width": 1819,
+                "height": 1256
+              }
+            },
+            "fileName": "facilities-strip-img-3.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "2t7rHo6CGEAVmvWmPCG4MW",
+        "type": "Asset",
+        "createdAt": "2025-09-23T15:44:04.960Z",
+        "updatedAt": "2025-09-23T15:44:32.959Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T15:44:32.959Z",
+        "firstPublishedAt": "2025-09-23T15:44:32.959Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/2t7rHo6CGEAVmvWmPCG4MW"
+      },
+      "fields": {
+        "title": {
+          "en-US": "our-products-1"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/2t7rHo6CGEAVmvWmPCG4MW/c174c9b67fb6fd617f3dba48abf4aebd/our-products-1.png",
+            "details": {
+              "size": 3666649,
+              "image": {
+                "width": 1895,
+                "height": 1545
+              }
+            },
+            "fileName": "our-products-1.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "564Z0x6FC2sthZKmaNAh3O",
+        "type": "Asset",
+        "createdAt": "2025-09-23T15:45:01.708Z",
+        "updatedAt": "2025-09-23T15:45:32.776Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T15:45:32.776Z",
+        "firstPublishedAt": "2025-09-23T15:45:32.776Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/564Z0x6FC2sthZKmaNAh3O"
+      },
+      "fields": {
+        "title": {
+          "en-US": "our-products-2"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/564Z0x6FC2sthZKmaNAh3O/c12974878359f50ef8c44eadcd92285a/our-products-2.png",
+            "details": {
+              "size": 4198730,
+              "image": {
+                "width": 1895,
+                "height": 1545
+              }
+            },
+            "fileName": "our-products-2.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "4yuWKGNGW28ARjZ0omhbl6",
+        "type": "Asset",
+        "createdAt": "2025-09-23T16:30:06.164Z",
+        "updatedAt": "2025-09-23T16:30:34.606Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T16:30:34.606Z",
+        "firstPublishedAt": "2025-09-23T16:30:34.606Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/4yuWKGNGW28ARjZ0omhbl6"
+      },
+      "fields": {
+        "title": {
+          "en-US": "our-products-3"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/4yuWKGNGW28ARjZ0omhbl6/6ceb0ccfa697e08a6a93b59a492edaa2/our-products-3.png",
+            "details": {
+              "size": 4164158,
+              "image": {
+                "width": 1895,
+                "height": 1545
+              }
+            },
+            "fileName": "our-products-3.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "1nH7YujOzbTgNTKsbmJRXz",
+        "type": "Asset",
+        "createdAt": "2025-09-23T16:31:09.067Z",
+        "updatedAt": "2025-09-23T16:31:35.435Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T16:31:35.435Z",
+        "firstPublishedAt": "2025-09-23T16:31:35.435Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/1nH7YujOzbTgNTKsbmJRXz"
+      },
+      "fields": {
+        "title": {
+          "en-US": "our-products-4"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/1nH7YujOzbTgNTKsbmJRXz/2e630bc514e2e9fbfd685f234d3edb1a/our-products-4.png",
+            "details": {
+              "size": 4043014,
+              "image": {
+                "width": 1895,
+                "height": 1545
+              }
+            },
+            "fileName": "our-products-4.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "id": "2sUJWJuTguEQZEIkQgnM2V",
+        "type": "Asset",
+        "createdAt": "2025-09-23T16:31:53.726Z",
+        "updatedAt": "2025-09-23T16:32:16.105Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-09-23T16:32:16.105Z",
+        "firstPublishedAt": "2025-09-23T16:32:16.105Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/zjb1zzuh38nn/environments/master/assets/2sUJWJuTguEQZEIkQgnM2V"
+      },
+      "fields": {
+        "title": {
+          "en-US": "our-products-5"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zjb1zzuh38nn/2sUJWJuTguEQZEIkQgnM2V/59c0717f105bcc7a389002bc5ed5db73/our-products-5.png",
+            "details": {
+              "size": 4034104,
+              "image": {
+                "width": 1895,
+                "height": 1545
+              }
+            },
+            "fileName": "our-products-5.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "2FefLDmvqeGfpbiEenXaEJ",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "652652ea-4d48-4564-8b0b-3e6fec2aa340"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "createdAt": "2025-09-20T01:59:18Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedAt": "2025-09-20T01:59:18Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "2FAMp5gRNRCAWjAZP3x3MF",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zjb1zzuh38nn"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "createdAt": "2025-09-20T01:59:18Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2ywT41g7UGOVZQEaqm9T3q"
+          }
+        },
+        "updatedAt": "2025-09-20T01:59:18Z"
+      }
+    }
+  ]
+}

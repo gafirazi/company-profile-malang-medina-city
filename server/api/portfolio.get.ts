@@ -11,6 +11,7 @@ export default defineEventHandler(async () => {
     const f = item.fields || {}
     return {
       id: item.sys.id,
+      description: f.description || '',
       image: f.image?.fields?.file?.url || null
     }
   })

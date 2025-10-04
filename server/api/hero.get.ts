@@ -11,6 +11,7 @@ export default defineEventHandler(async () => {
   const fields = item?.fields || {}
   return {
     title: fields.title || '',
+    titleColor: fields.titleColor || null,
     subtitle: fields.subtitle || '',
     ctaText: fields.ctaText || '',
     ctaLink: fields.ctaLink || '',

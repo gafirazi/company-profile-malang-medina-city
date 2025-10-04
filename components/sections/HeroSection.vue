@@ -8,7 +8,7 @@
 
       <div class="relative z-10 mx-auto flex h-full w-full max-w-6xl flex-col items-start justify-start gap-6 px-4 pt-16 md:flex-row md:items-center md:justify-between md:pt-0">
         <div class="text-white max-w-xl">
-          <p class="text-2xl md:text-4xl font-bold">{{ hero.title || 'HOT PROMO' }}</p>
+          <p class="text-2xl md:text-4xl font-bold" :style="hero.titleColor ? { color: hero.titleColor } : undefined">{{ hero.title || 'HOT PROMO' }}</p>
           <h1 class="mt-1 text-4xl md:text-7xl font-extrabold">{{ hero.subtitle || 'DISKON SPESIAL KEMERDEKAAN' }}</h1>
           <p class="mt-2 text-base md:text-lg opacity-90">{{ hero.ctaText || 'Kuota sangat terbatas, berlaku hanya untuk 20 rumah pertama bulan ini' }}</p>
         </div>
@@ -35,6 +35,7 @@ import heroBg from '@/assets/img/footer.png'
 
 type HeroData = {
   title?: string
+  titleColor?: string | null
   subtitle?: string
   ctaText?: string
   ctaLink?: string

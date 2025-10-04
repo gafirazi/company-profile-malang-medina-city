@@ -3,11 +3,11 @@
     <div class="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 md:grid-cols-2">
       <!-- Left column: heading, metrics, small map -->
       <div>
-        <h3 class="font-serif text-5xl font-semibold uppercase tracking-wide text-brand-cream">LOKASI</h3>
-        <p class="mt-1 font-sans text-sm italic text-brand-cream">strategis & menguntungkan</p>
+        <h3 class="font-serif text-5xl font-semibold uppercase tracking-wide text-brand-cream">{{ content.title || 'LOKASI' }}</h3>
+        <p class="mt-1 font-sans text-sm italic text-brand-cream">{{ content.subtitle || 'strategis & menguntungkan' }}</p>
 
         <div class="mt-10 grid grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-          <div v-for="(item, i) in leftMetrics" :key="`l-${i}`" class="flex items-start gap-4">
+          <div v-for="(item, i) in metrics" :key="`l-${i}`" class="flex items-start gap-4">
             <span class="block h-12 w-px bg-brand-cream/80" />
             <div>
               <div class="flex items-start gap-3">
@@ -28,7 +28,7 @@
               scrolling="no"
               marginheight="0"
               marginwidth="0"
-              :src="gmapsSrc"
+              :src="gmapsFallback"
             />
           </div>
         </div>
@@ -37,18 +37,14 @@
       <!-- Right column: big map, text block, socials -->
       <div class="flex flex-col">
         <div class="aspect-[16/13] w-full overflow-hidden rounded-sm ring-1 ring-white/10">
-          <img :src="bigMap" alt="Lokasi KEK Singhasari" class="h-full w-full object-cover" />
+          <img :src="content.bigMap || bigMap" alt="Lokasi KEK Singhasari" class="h-full w-full object-cover" />
         </div>
         <h4 class="mt-8 font-sans text-2xl font-extrabold text-white">
-          <span class="font-extrabold">Rencana KEK Singhasari</span>
-          <span class="font-normal"> bersebelahan dengan area Malang Medina City</span>
+          <span class="font-extrabold">{{ content.rightTitleStrong || 'Rencana KEK Singhasari' }}{{ ' ' }}</span>
+          <span class="font-normal"> {{ content.rightTitleNormal || 'bersebelahan dengan area Malang Medina City' }}</span>
         </h4>
         <div class="mt-4 space-y-4 font-sans text-[15px] leading-7 text-white/85">
-          <p>
-            Dimana di area ini rencananya akan memasarkan pengembangan sektor pariwisata seperti untuk
-            perhotelan, life style, travel, restoran, villa, dan lainnya. Pengembangan sektor pariwisata di sana juga
-            ditautkan dengan kawasan wisata unggulan Jatim dan nasional, yakni kawasan Bromo, Tengger, Semeru
-          </p>
+          <p class="whitespace-pre-line">{{ content.rightParagraph || rightParagraphFallback }}</p>
         </div>
       </div>
     </div>
@@ -57,16 +53,25 @@
 </template>
 
 <script setup lang="ts">
-const leftMetrics = [
-  { num: 10, caption: 'dari tol singosari' },
-  { num: 11, caption: 'dari bentoel tbk' },
-  { num: 11, caption: 'ke al mahira IIBS' },
-  { num: 13, caption: 'dari ITN 2' },
-  { num: 14, caption: 'ke hawaii waterpark' }
-]
-
-const gmapsSrc = 'https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Malang%20Medina%20CIty+(Malang%20Medina%20City)&t=&z=14&ie=UTF8&iwloc=B&output=embed'
 import bigMap from '@/assets/img/location-highlights.png'
+
+type Metric = { num: number; caption: string }
+type LocationHighlights = {
+  title?: string
+  subtitle?: string
+  metrics: Metric[]
+  bigMap?: string | null
+  rightTitleStrong?: string
+  rightTitleNormal?: string
+  rightParagraph?: string
+}
+
+const { data } = await useAsyncData<LocationHighlights>('location-highlights', () => $fetch<LocationHighlights>('/api/location-highlights'))
+const content = computed<LocationHighlights>(() => data.value || { metrics: [] })
+const metrics = computed<Metric[]>(() => content.value.metrics?.slice(0, 6) || [])
+
+const gmapsFallback = 'https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Malang%20Medina%20CIty+(Malang%20Medina%20City)&t=&z=14&ie=UTF8&iwloc=B&output=embed'
+const rightParagraphFallback = 'Dimana di area ini rencananya akan memasarkan pengembangan sektor pariwisata seperti untuk perhotelan, life style, travel, restoran, villa, dan lainnya. Pengembangan sektor pariwisata di sana juga ditautkan dengan kawasan wisata unggulan Jatim dan nasional, yakni kawasan Bromo, Tengger, Semeru'
 </script>
 
 <style scoped>
