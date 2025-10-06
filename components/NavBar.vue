@@ -3,7 +3,7 @@
     <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/40 to-transparent"></div>
     <div class="relative mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
       <NuxtLink to="/" class="flex items-center gap-2">
-        <img :src="logo" alt="Medina" class="h-16 w-auto" style="filter: brightness(0) invert(1);" />
+        <img :src="logo" alt="Medina" class="h-8 md:h-16 w-auto" style="filter: brightness(0) invert(1);" />
       </NuxtLink>
       <ul class="hidden items-center gap-8 font-sans text-sm md:flex">
         <li><a href="#lokasi" class="hover:underline" @click.prevent="scrollTo('lokasi')">Lokasi</a></li>
