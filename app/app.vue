@@ -10,12 +10,12 @@
 
 <script setup>
 import NavBar from '@/components/NavBar.vue'
-import logo from '@/assets/img/our-products-logo.png'
+import logo from '@/assets/img/our-products-logo.webp'
 
 useHead({
   link: [
-    { rel: 'icon', type: 'image/png', href: logo },
-    { rel: 'shortcut icon', type: 'image/png', href: logo },
+    { rel: 'icon', type: 'image/webp', href: logo },
+    { rel: 'shortcut icon', type: 'image/webp', href: logo },
     { rel: 'apple-touch-icon', href: logo }
   ]
 })

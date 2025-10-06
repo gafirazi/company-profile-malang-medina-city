@@ -3,7 +3,7 @@
     <div class="mx-auto grid max-w-6xl grid-cols-1 items-start gap-10 px-6 md:grid-cols-2">
       <div>
         <div class="aspect-[16/10] w-full overflow-hidden rounded-sm ring-1 ring-white/10">
-          <img :src="content.image || clusterImg" alt="Cluster Lateefa & Syakeera" class="h-full w-full object-cover" />
+          <img :src="content.image" alt="Cluster Lateefa & Syakeera" class="h-full w-full object-cover" />
         </div>
       </div>
       <div>
@@ -16,8 +16,6 @@
 </template>
 
 <script setup lang="ts">
-import clusterImg from '@/assets/img/cluster-intro.png'
-
 type ClusterIntro = {
   title?: string
   tagline?: string

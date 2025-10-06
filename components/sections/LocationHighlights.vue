@@ -37,7 +37,7 @@
       <!-- Right column: big map, text block, socials -->
       <div class="flex flex-col">
         <div class="aspect-[16/13] w-full overflow-hidden rounded-sm ring-1 ring-white/10">
-          <img :src="content.bigMap || bigMap" alt="Lokasi KEK Singhasari" class="h-full w-full object-cover" />
+          <img :src="content.bigMap" alt="Lokasi KEK Singhasari" class="h-full w-full object-cover" />
         </div>
         <h4 class="mt-8 font-sans text-2xl font-extrabold text-white">
           <span class="font-extrabold">{{ content.rightTitleStrong || 'Rencana KEK Singhasari' }}{{ ' ' }}</span>
@@ -53,8 +53,6 @@
 </template>
 
 <script setup lang="ts">
-import bigMap from '@/assets/img/location-highlights.png'
-
 type Metric = { num: number; caption: string }
 type LocationHighlights = {
   title?: string

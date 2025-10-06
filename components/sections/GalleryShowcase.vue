@@ -74,16 +74,8 @@
 </template>
 
 <script setup lang="ts">
-import s1 from '@/assets/img/facilities-strip-img-1.png'
-import s2 from '@/assets/img/facilities-strip-img-1.png'
-import s3 from '@/assets/img/facilities-strip-img-1.png'
-import s4 from '@/assets/img/facilities-strip-img-1.png'
-
-const slideImages = [s1, s2, s3, s4]
-
 const defaultSlides = [
   {
-    image: slideImages[0],
     title: 'Lokasi Strategis',
     paragraphs: [
       'Berada di jalur malang-surabaya, serta jalur utama malang- kota wisata Batu, membuat Malang Medina City menjadi pilihan tempat tinggal sekaligus investasi masa depan yang menjanjikan. Memberikan kemudahan akses menuju tempat-tempat strategis Kota Malang',
@@ -91,7 +83,6 @@ const defaultSlides = [
     ]
   },
   {
-    image: slideImages[1],
     title: 'Akses Mudah',
     paragraphs: [
       'Dekat tol dan fasilitas umum untuk menunjang mobilitas harian.',
@@ -99,14 +90,12 @@ const defaultSlides = [
     ]
   },
   {
-    image: slideImages[2],
     title: 'Fasilitas Lengkap',
     paragraphs: [
       'Dilengkapi masjid, club house, pusat kuliner, dan fasilitas olahraga.'
     ]
   },
   {
-    image: slideImages[3],
     title: 'Investasi Cerdas',
     paragraphs: [
       'Prospek nilai properti meningkat seiring pengembangan kawasan.'
@@ -119,11 +108,10 @@ type GallerySlideInput = { id?: string; image?: string | null; title?: string; p
 type GallerySlide = { id?: string; image: string; title: string; paragraph: string }
 const { data } = await useAsyncData<GallerySlideInput[]>('gallery-showcase', () => $fetch<GallerySlideInput[]>('/api/gallery-showcase'))
 const slidesInput = computed<GallerySlideInput[]>(() => (Array.isArray(data.value) ? data.value : []))
-const fallbackImage: string = (slideImages[0] as string) || ''
 const normalizedSlides = computed<GallerySlide[]>(() =>
   slidesInput.value.map((s) => ({
     id: s.id,
-    image: s.image ?? fallbackImage,
+    image: s.image || '',
     title: s.title ?? '',
     paragraph: typeof s.paragraph === 'string' ? s.paragraph : ''
   }))
@@ -140,7 +128,7 @@ const prev = () => { current.value = (current.value - 1 + safeSlides.value.lengt
 const currentSlide = computed<GallerySlide>(() => {
   const list = safeSlides.value
   if (!list.length) {
-    return { image: fallbackImage, title: '', paragraph: '' }
+    return { image: '', title: '', paragraph: '' }
   }
   const index = current.value % list.length
   const s = list[index] as GallerySlide

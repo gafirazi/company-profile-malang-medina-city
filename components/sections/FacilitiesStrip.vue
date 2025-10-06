@@ -77,33 +77,16 @@
 </template>
 
 <script setup lang="ts">
-import i1 from '@/assets/img/icon/facilities-strip-1.png'
-import i2 from '@/assets/img/icon/facilities-strip-2.png'
-import i3 from '@/assets/img/icon/facilities-strip-3.png'
-import i4 from '@/assets/img/icon/facilities-strip-4.png'
-import i5 from '@/assets/img/icon/facilities-strip-5.png'
-import i6 from '@/assets/img/icon/facilities-strip-6.png'
-import i7 from '@/assets/img/icon/facilities-strip-7.png'
-import i8 from '@/assets/img/icon/facilities-strip-8.png'
-import i9 from '@/assets/img/icon/facilities-strip-9.png'
-
-import g1 from '@/assets/img/facilities-strip-img-1.png'
-import g2 from '@/assets/img/facilities-strip-img-2.png'
-import g3 from '@/assets/img/facilities-strip-img-3.png'
-
 type FacilityItem = { label: string; icon: string | null }
 type FacilitiesData = { items: FacilityItem[]; gallery: ({ image: string | null; description?: string } | string | null)[]; title?: string | null; subtitle?: string | null }
 
-const fallbackIcons = [i1, i2, i3, i4, i5, i6, i7, i8, i9]
 const { data } = await useAsyncData<FacilitiesData>('facilities', () => $fetch<FacilitiesData>('/api/facilities'))
 
 const items = computed(() => {
   const fromCms = data.value?.items || []
   if (fromCms.length) {
-    return fromCms.map((it, idx) => ({ label: it.label, src: it.icon || fallbackIcons[idx % fallbackIcons.length] }))
+    return fromCms.map((it, idx) => ({ label: it.label, src: it.icon }))
   }
-  const labels = ['Masjid', 'Club House', 'Food Archade', 'Fas. Pendidikan', 'Lapangan', 'Gate', 'Lap. Berkuda', 'Pasar', 'Glamping']
-  return labels.map((label, i) => ({ label, src: fallbackIcons[i] }))
 })
 
 const gallery = computed(() => {
@@ -114,11 +97,7 @@ const gallery = computed(() => {
       return { image: g?.image || null, description: g?.description || '' }
     })
     .filter((g: any) => Boolean(g.image)) as { image: string; description: string }[]
-  return fromCms.length ? fromCms : [
-    { image: g1, description: '' },
-    { image: g2, description: '' },
-    { image: g3, description: '' }
-  ]
+  return fromCms.length ? fromCms : []
 })
 
 import { ref, computed as vueComputed, onMounted, onBeforeUnmount } from 'vue'

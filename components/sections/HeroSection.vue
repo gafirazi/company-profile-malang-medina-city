@@ -2,7 +2,7 @@
   <section class="relative">
     <!-- Placeholder hero; replace images/text to match design exactly -->
     <div class="relative h-[540px] w-full overflow-hidden">
-      <div class="absolute inset-0 bg-cover bg-center" :style="{ backgroundImage: `url(${hero.bgImage || heroBg})` }"></div>
+      <div class="absolute inset-0 bg-cover bg-center" :style="{ backgroundImage: `url(${heroBgUrl})` }"></div>
       <div class="absolute inset-0 bg-black/60"></div>
       <div class="pointer-events-none absolute inset-x-0 bottom-0 h-56" :style="bottomBlendStyle"></div>
 
@@ -31,7 +31,6 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import heroBg from '@/assets/img/footer.png'
 
 type HeroData = {
   title?: string
@@ -44,6 +43,10 @@ type HeroData = {
 
 const { data } = await useAsyncData<HeroData>('hero', () => $fetch<HeroData>('/api/hero'))
 const hero = computed<HeroData>(() => data.value || {})
+const heroBgUrl = computed(() => {
+  const url = hero.value.bgImage || ''
+  return url ? (url.startsWith('http') ? url : `https:${url}`) : ''
+})
 const bottomBlendStyle = {
   background:
     'linear-gradient(to bottom, rgba(16, 26, 21, 0) 0%, rgba(16, 26, 21, 0.75) 60%, rgb(16, 26, 21) 85%, rgb(16, 26, 21) 100%)'

@@ -18,21 +18,16 @@
 
 <script setup lang="ts">
 import ProductCard from './OurProductsCard.vue'
-import logo from '@/assets/img/our-products-logo.png'
-import productImg from '@/assets/img/our-products-1.png'
-import productImg2 from '@/assets/img/our-products-2.png'
-import productImg3 from '@/assets/img/our-products-3.png'
-import productImg4 from '@/assets/img/our-products-4.png'
-import productImg5 from '@/assets/img/our-products-5.png'
+import logo from '@/assets/img/our-products-logo.webp'
 
 type Product = { id: string; image: string | null; title?: string; subtitle?: string }
 const { data } = await useAsyncData<Product[]>('products', () => $fetch<Product[]>('/api/products'))
 const products = computed(() => (data.value && data.value.length ? data.value : [
-  { id: '1', image: productImg },
-  { id: '2', image: productImg2 },
-  { id: '3', image: productImg3 },
-  { id: '4', image: productImg4 },
-  { id: '5', image: productImg5 }
+  { id: '1', image: '' },
+  { id: '2', image: '' },
+  { id: '3', image: '' },
+  { id: '4', image: '' },
+  { id: '5', image: '' }
 ]))
 
 const firstProduct = computed(() => products.value[0])

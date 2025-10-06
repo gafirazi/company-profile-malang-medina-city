@@ -15,7 +15,7 @@
           </div>
           <div class="space-y-6">
             <div class="overflow-hidden rounded-2xl">
-              <img :src="article?.coverImage || img1" alt="artikel" class="h-full w-full object-cover" />
+              <img :src="article?.coverImage" alt="artikel" class="h-full w-full object-cover" />
             </div>
           </div>
         </div>
@@ -50,8 +50,6 @@ const formatDate = (iso: string | null) => {
   return d.toLocaleDateString('id-ID', { day: '2-digit', month: 'long', year: 'numeric' })
 }
 
-import img1 from '@/assets/img/portfolio-1.png'
-import img2 from '@/assets/img/portfolio-2.png'
 import FooterContact from '@/components/sections/FooterContact.vue'
 </script>
 

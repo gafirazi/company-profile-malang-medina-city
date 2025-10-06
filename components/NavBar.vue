@@ -29,7 +29,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import logo from '@/assets/img/our-products-logo.png'
+import logo from '@/assets/img/our-products-logo.webp'
 const open = ref(false)
 const router = useRouter()
 const route = useRoute()

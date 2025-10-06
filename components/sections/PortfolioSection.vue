@@ -9,9 +9,9 @@
           <transition name="fade" mode="out-in">
             <div :key="current" class="px-0">
               <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
-                <div v-for="p in currentGroup" :key="p.id">
+                <div v-for="p in currentGroupFiltered" :key="p.id">
                   <div class="aspect-[16/9] overflow-hidden rounded-sm ring-1 ring-black/10">
-                    <img :src="p.image || fallback" :alt="p.description" class="w-full h-full object-cover" />
+                    <img :src="p.image || ''" :alt="p.description" class="w-full h-full object-cover" />
                   </div>
                   <p class="mt-2 font-sans text-sm lowercase">{{ p.description }}</p>
                 </div>
@@ -38,9 +38,9 @@
         </div>
 
         <div v-else class="grid grid-cols-1 gap-4 md:grid-cols-3">
-          <div v-for="p in items" :key="p.id">
+          <div v-for="p in itemsFiltered" :key="p.id">
             <div class="aspect-[16/9] overflow-hidden rounded-sm ring-1 ring-black/10">
-              <img :src="p.image || fallback" :alt="p.description" class="w-full h-full object-cover" />
+              <img :src="p.image || ''" :alt="p.description" class="w-full h-full object-cover" />
             </div>
             <p class="mt-2 font-sans text-sm lowercase">{{ p.description }}</p>
           </div>
@@ -62,11 +62,10 @@
 </template>
 
 <script setup lang="ts">
-import fallback from '@/assets/img/portfolio-1.png'
-
 type PortfolioItem = { id: string; description: string; image: string | null }
 const { data } = await useAsyncData<PortfolioItem[]>('portfolio', () => $fetch<PortfolioItem[]>('/api/portfolio'))
 const items = computed(() => data.value ?? [])
+const itemsFiltered = computed(() => items.value.filter((p) => Boolean(p.image)))
 
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 const current = ref(0)
@@ -89,8 +88,9 @@ const pageSize = computed(() => (isDesktop.value ? 3 : 1))
 const totalPages = computed(() => Math.max(1, Math.ceil(items.value.length / pageSize.value)))
 const currentGroup = computed(() => {
   const start = current.value * pageSize.value
-  return items.value.slice(start, start + pageSize.value)
+  return itemsFiltered.value.slice(start, start + pageSize.value)
 })
+const currentGroupFiltered = computed(() => currentGroup.value)
 
 const next = () => { current.value = (current.value + 1) % totalPages.value }
 const prev = () => { current.value = (current.value - 1 + totalPages.value) % totalPages.value }

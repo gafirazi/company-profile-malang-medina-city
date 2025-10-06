@@ -11,7 +11,7 @@
             class="overflow-hidden rounded-[30px] bg-white text-[#0B1511] shadow"
           >
             <div class="aspect-[16/10] w-full overflow-hidden">
-              <img :src="a.coverImage || img" alt="artikel" class="h-full w-full object-cover" />
+              <img :src="a.coverImage" alt="artikel" class="h-full w-full object-cover" />
             </div>
             <div class="px-5 pb-6 pt-4 text-left">
               <p class="text-xs text-[#0B1511]/80">{{ formatDate(a.publishedAt) }}</p>
@@ -32,7 +32,6 @@
 </template>
 
 <script setup lang="ts">
-import img from '@/assets/img/article.png'
 import FooterContact from '@/components/sections/FooterContact.vue'
 
 type ArticleCard = {

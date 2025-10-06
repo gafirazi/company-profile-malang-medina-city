@@ -3,7 +3,7 @@
     <div
       class="absolute inset-0"
       :class="!props.useSolidBg ? 'bg-cover bg-center' : ''"
-      :style="props.useSolidBg ? { backgroundColor: '#0e1813' } : { backgroundImage: `url(${footerBg})` }"
+      :style="props.useSolidBg ? { backgroundColor: '#0e1813' } : { backgroundImage: `url(${bgUrl})` }"
     ></div>
     <!-- Top white gradient to blend with previous section -->
     <div v-if="!props.useSolidBg" class="absolute inset-0" :style="gradientStyle"></div>
@@ -55,8 +55,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import footerBg from '@/assets/img/footer.png'
-import logo from '@/assets/img/our-products-logo.png'
+import logo from '@/assets/img/our-products-logo.webp'
 
 const props = withDefaults(defineProps<{ useSolidBg?: boolean }>(), { useSolidBg: false })
 
@@ -101,5 +100,12 @@ const handleSubmit = async () => {
 type SiteSettings = { facebook?: string | null; instagram?: string | null }
 const { data } = await useAsyncData<SiteSettings>('site-settings', () => $fetch<SiteSettings>('/api/site-settings'))
 const settings = computed<SiteSettings>(() => data.value || {})
+
+type HeroBg = { bgImage?: string | null }
+const { data: heroData } = await useAsyncData<HeroBg>('hero-footer', () => $fetch<HeroBg>('/api/hero'))
+const bgUrl = computed(() => {
+  const url = heroData.value?.bgImage || ''
+  return url ? (url.startsWith('http') ? url : `https:${url}`) : ''
+})
 </script>
 

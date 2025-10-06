@@ -11,7 +11,7 @@
           class="overflow-hidden rounded-2xl bg-brand-greenDark text-brand-cream shadow"
         >
           <div class="aspect-[16/10] w-full overflow-hidden">
-            <img :src="a.coverImage || img" alt="artikel" class="h-full w-full object-cover" />
+            <img :src="a.coverImage" alt="artikel" class="h-full w-full object-cover" />
           </div>
           <div class="px-5 pb-6 pt-4 text-left">
             <p class="text-xs text-brand-cream/80">{{ formatDate(a.publishedAt) }}</p>
@@ -38,8 +38,6 @@
 </template>
 
 <script setup lang="ts">
-import img from '@/assets/img/article.png'
-
 type ArticleCard = {
   id: string
   slug: string
