@@ -4,7 +4,7 @@ export default defineEventHandler(async () => {
 
   const res = await client.getEntries({
     content_type: 'portfolioItem',
-    order: ['sys.createdAt']
+    order: ['fields.order', 'sys.createdAt']
   })
 
   return res.items.map((item: any) => {

@@ -5,7 +5,7 @@ export default defineEventHandler(async () => {
   // Option A: simple list content type `testimonial` (quote + author)
   const res = await client.getEntries({
     content_type: 'testimonial',
-    order: ['sys.createdAt']
+    order: ['fields.order', 'sys.createdAt']
   })
 
   return res.items.map((item: any) => ({

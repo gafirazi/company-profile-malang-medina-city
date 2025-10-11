@@ -40,12 +40,11 @@
         <div class="flex flex-col items-end gap-3">
           <img :src="logo" alt="Logo" class="h-16 w-auto" style="filter: brightness(0) invert(1);" />
           <div class="mt-2 flex items-center gap-4 text-white">
-            <a :href="settings.facebook || 'https://www.facebook.com/malangmedinacity'" target="_blank" rel="noopener" aria-label="Facebook Malang Medina City">
-              <Icon name="mdi:facebook" size="22" />
-            </a>
-            <a :href="settings.instagram || 'https://www.instagram.com/malangmedinacity/'" target="_blank" rel="noopener" aria-label="Instagram Malang Medina City">
-              <Icon name="mdi:instagram" size="22" />
-            </a>
+            <template v-for="link in siteLinks" :key="link.url + (link.icon || '')">
+              <a :href="normalizeUrl(link.url)" target="_blank" rel="noopener" aria-label="Social link">
+                <img v-if="link.icon" :src="normalizeUrl(link.icon)" alt="social" class="h-[22px] w-[22px] object-contain" />
+              </a>
+            </template>
           </div>
         </div>
       </div>
@@ -97,9 +96,21 @@ const handleSubmit = async () => {
   }
 }
 
-type SiteSettings = { facebook?: string | null; instagram?: string | null }
-const { data } = await useAsyncData<SiteSettings>('site-settings', () => $fetch<SiteSettings>('/api/site-settings'))
-const settings = computed<SiteSettings>(() => data.value || {})
+type SiteLink = { icon: string | null; url: string; order: number | null }
+const { data: siteData } = await useAsyncData<SiteLink[]>('site-settings', () => $fetch<SiteLink[]>('/api/site-settings'))
+const siteLinks = computed<SiteLink[]>(() => {
+  const links = Array.isArray(siteData.value) ? siteData.value : []
+  return [...links].sort((a, b) => {
+    const ao = a.order ?? Number.MAX_SAFE_INTEGER
+    const bo = b.order ?? Number.MAX_SAFE_INTEGER
+    return ao - bo
+  })
+})
+
+function normalizeUrl(url: string): string {
+  if (!url) return '#'
+  return url.startsWith('http') ? url : `https:${url}`
+}
 
 type HeroBg = { bgImage?: string | null }
 const { data: heroData } = await useAsyncData<HeroBg>('hero-footer', () => $fetch<HeroBg>('/api/hero'))

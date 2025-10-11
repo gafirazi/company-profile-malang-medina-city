@@ -5,11 +5,13 @@
     </client-only>
     <NuxtRouteAnnouncer />
     <NuxtPage />
+    <BackToTop />
   </div>
 </template>
 
 <script setup>
 import NavBar from '@/components/NavBar.vue'
+import BackToTop from '@/components/BackToTop.vue'
 import logo from '@/assets/img/our-products-logo.webp'
 
 useHead({
