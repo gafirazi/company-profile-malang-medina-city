@@ -3,7 +3,7 @@
     v-show="isVisible"
     @click="scrollToTop"
     type="button"
-    class="fixed bottom-6 right-6 z-50 rounded-full bg-black/70 text-white shadow-lg backdrop-blur px-4 py-3 hover:bg-black focus:outline-none focus:ring-2 focus:ring-white/60 transition transform hover:-translate-y-0.5 active:translate-y-0"
+    class="fixed bottom-[88px] right-6 z-50 rounded-full bg-black/70 text-white shadow-lg backdrop-blur px-4 py-3 hover:bg-black focus:outline-none focus:ring-2 focus:ring-white/60 transition transform hover:-translate-y-0.5 active:translate-y-0"
     aria-label="Back to top"
   >
     <span class="sr-only">Back to top</span>

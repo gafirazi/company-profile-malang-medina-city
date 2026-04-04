@@ -6,12 +6,14 @@
     <NuxtRouteAnnouncer />
     <NuxtPage />
     <BackToTop />
+    <WhatsAppButton />
   </div>
 </template>
 
 <script setup>
 import NavBar from '@/components/NavBar.vue'
 import BackToTop from '@/components/BackToTop.vue'
+import WhatsAppButton from '@/components/WhatsAppButton.vue'
 import logo from '@/assets/img/our-products-logo.webp'
 
 useHead({
