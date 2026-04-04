@@ -1,6 +1,6 @@
 <template>
   <a
-    href="https://wa.me/6282261111144"
+    href="https://wa.me/6282261111144?text=Halo%2C%20saya%20tertarik%20dengan%20hunian%20di%20Malang%20Medina%20City"
     target="_blank"
     rel="noopener noreferrer"
     class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition hover:scale-110 hover:shadow-xl active:scale-100"
